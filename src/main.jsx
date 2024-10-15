@@ -8,7 +8,8 @@ import {Cast, RestrictedContent, RelatedMerchandise, Playlist, Genres, Tags} fro
 import {AboutUs, ContactUs, FAQ, PrivacyPolicy, PricingPlan, ComingSoon, ErrorPage1, ErrorPage2} from './components/Pages'
 import Listing from './components/Blog/Listing.jsx'
 import {Shop, MyAccount, CartPage} from './components/Shop'
-import {Login, Register, ResetPassword, TermsOfUse } from './components/login'
+import { Login, Register, ResetPassword, TermsOfUse } from './components/login'
+import MovieDetail from './components/other/MovieDetail.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,6 +42,7 @@ const router = createBrowserRouter(
         <Route path='cartpage' element={<CartPage />} />
 
         <Route path='termsofuse' element={<TermsOfUse />} />
+        <Route path='moviedetail' element={<MovieDetail />} />
 
         <Route path='*' element={<div>Not Found</div>} />
       </Route>

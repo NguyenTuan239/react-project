@@ -29,7 +29,7 @@ const Footer = () => {
   };
 
   return (
-    <footer>
+    <footer className='bg-stone-950 text-slate-200'>
       <button
         id="backToTop"
         onClick={scrollToTop}
@@ -41,7 +41,7 @@ const Footer = () => {
       <div className="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">
         <div>
           <div className='relative h-10 w-40 mb-8'>
-            <Link to="otthome"><img src="/image/logo.webp" alt="logo" class="logo h-8 w-auto" /></Link>
+            <Link to="otthome"><img src="/image/logo.webp" alt="logo" className="logo h-8 w-auto" /></Link>
           </div>
           <p>Email us: <Link to="mailto:customer@streamit.com" className="font-normal">customer@streamit.com</Link></p>
           <p className="mt-4">CUSTOMER SERVICES</p>
@@ -76,7 +76,7 @@ const Footer = () => {
           <h3 className="font-medium text-base">Subscribe Newsletter</h3>
           <div className="flex mt-5">
             <input id="send-email" type="email" autoComplete="true" placeholder="Email*" className="rounded-l-lg p-2 w-full border border-transparent bg-black red-border focus:outline-none" />
-            <Link href="#"><div className="sub-but w-32 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">Subscribe<i className="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></Link>
+            <Link to=""><div className="sub-but w-32 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">Subscribe</span></div></Link>
           </div>
           <div className="mt-10 flex gap-4 items-center">
             <span className="text-nowrap">Follow Us:</span>

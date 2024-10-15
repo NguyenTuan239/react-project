@@ -54,7 +54,7 @@ const Setting = () => {
           <div id="setting-icon"
               ref={settingIconRef}
               onClick={handSettingIconClick}
-              className={`${direction === 'ltr' ? 'right-0' : 'left-0'} fixed top-32 h-10 w-10 z-40 cursor-pointer bg-black flex justify-center items-center`}>
+              className={`${direction === 'ltr' ? 'right-0' : 'left-0'} fixed top-32 text-white h-10 w-10 z-40 cursor-pointer bg-black flex justify-center items-center`}>
             <FontAwesomeIcon icon={faGear} size='lg'/>
         </div>
           <div id="setting-bar"
