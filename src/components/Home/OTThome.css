@@ -1,0 +1,21 @@
+
+.navigation_{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 10;
+}
+.navigation_ div[class^="swiper-button"]::after{
+    display: none;
+}
+.navigation_ div[class^="swiper-button"]{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
