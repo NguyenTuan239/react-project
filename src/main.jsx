@@ -9,7 +9,7 @@ import {AboutUs, ContactUs, FAQ, PrivacyPolicy, PricingPlan, ComingSoon, ErrorPa
 import Listing from './components/Blog/Listing.jsx'
 import {Shop, MyAccount, CartPage} from './components/Shop'
 import { Login, Register, ResetPassword, TermsOfUse } from './components/login'
-import MovieDetail from './components/other/MovieDetail.jsx'
+import {MovieDetail} from './components/other'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

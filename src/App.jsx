@@ -7,11 +7,11 @@ import Setting from './components/Setting/Setting';
 import Loader from './components/Setting/Loadder';
 import { Outlet } from 'react-router-dom';
 import './App.css';
-import { DataProvider } from './contexts/DataContext';
+import { MovieProvider } from './contexts/MovieContext';
 
 function App() {
   return (
-    <DataProvider>
+    <MovieProvider>
       <SettingProvider>
         <Loader />
         <Setting />
@@ -19,7 +19,7 @@ function App() {
         <Outlet />
         <Footer />
       </SettingProvider>
-    </DataProvider>
+      </MovieProvider>
   );
 }
 
