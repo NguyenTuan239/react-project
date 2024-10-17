@@ -182,7 +182,7 @@ object-fit: cover;
     transition: 1s;
 }
 .topten-item{
-    padding-bottom: 15%;
+    padding-bottom: 18%;
     width: 100%;
     cursor: pointer;
 }
@@ -198,24 +198,22 @@ object-fit: cover;
 }
 /* main section4 css*/
 .only-on-stream-image {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     aspect-ratio: 3/4;
-    background-position: center;
-    background-size: cover;
     transition: all 1s;
     z-index: 1;
 }
-.only-on-stream-image::before {
-    content: "";
+.only-on-stream-image-after{
+    transition: all 1s;
+    opacity: 0;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: all 1s;
-    background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.5));
-    z-index: 5;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.65));
+    z-index: 2;
 }
 .only-onstream-item:hover{
     z-index: 10;
@@ -227,6 +225,10 @@ object-fit: cover;
     }
     .sec9-underline{
         display: block;
+    }
+    .only-on-stream-image-after{
+        transform: scale(1.1);
+        opacity: 1;
     }
 }
 .only-onstream-item:hover .only-on-stream-image::before {
@@ -245,7 +247,7 @@ object-fit: cover;
     }
 }
 .only-onstream-item {
-    padding-top: 7%;
+    padding-top: 12%;
     padding-bottom: 3%;
 
 }
@@ -284,4 +286,209 @@ object-fit: cover;
     .only-on-stream-content{
         transform: scaleY(1);
     }
+}
+/* main section5 css*/
+.section-5{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.sec5-bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(90deg,rgb(12, 10, 9, 1),rgba(12, 10, 9, 0.9), rgba(12, 10, 9, 0.3),rgba(12, 10, 9, 0));
+        z-index: 2; 
+    }
+}
+.sec5-content{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; /* Số dòng bạn muốn giới hạn */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sec5-bg .sec5-Poster{
+    position: absolute;
+    top: 23%;
+    padding-left: 50px;
+    padding-right: 60px;
+    z-index: 3;
+}
+@media (min-width: 768px){
+    .section-5{
+        height: 650px;
+    }
+    .sec5-bg .sec5-Poster{
+        top: 25%;
+        padding-left: 450px;
+        width: 850px;
+    }
+}
+.sec5-image-slide{
+    position: absolute;
+    width: 300px;
+    height: 86%;
+    top: 7%;
+    left: 70px;
+    z-index: 10;
+}
+.sec5-prev{
+    position: absolute;
+    top: -40px;
+    left: 47%;
+    z-index: 40;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(161, 158, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.sec5-next{
+    position: absolute;
+    bottom: -40px;
+    left: 47%;
+    z-index: 40;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(161, 158, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+/* main section6 css*/
+.sec6-image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* main section 8 css*/
+.section-8{
+    position: relative;
+    width: 100%;
+    height: 950px;
+}
+.sec8-Poster{
+    position: absolute;
+    top: 20px;
+    padding-left: 20px;
+    padding-right: 60px;
+    z-index: 3;
+}
+.sec8-espisode{
+    position: absolute;
+    top: 400px;
+    background-color: rgb(22, 22, 22);
+    width: 92%;
+    height: 530px;
+    margin-left: 4%;
+    z-index: 2;
+}
+@media (min-width: 768px){
+    .sec8-Poster{
+        top: 25%;
+        width: 50%;
+    }
+    .sec8-espisode{
+        top: 20%;
+        width: 38%;
+        right: 20px;
+    }
+}
+@media (min-width: 1024px){
+    .sec8-Poster{
+        padding-left: 150px;
+    }
+    .sec8-espisode{
+        right: 150px;
+    }
+}
+.sec8-tvshow{
+    width: 80px;
+    height: 85px;
+    overflow: hidden;
+}
+.sec8-tvshow-img{
+    object-fit: cover;
+    transition: all 3s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+.sec8-season1-content, .sec8-season2-content, .sec8-season3-content{
+    transform-origin: top center;
+    animation: sec8-showcontent 1s forwards ease-in-out;
+}
+@keyframes sec8-showcontent {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.pagination_sec8{
+    position: absolute;
+    width: 150px;
+    top: 5%;
+    right: 3%;
+}
+@media (min-width: 768px){
+    .pagination_sec8{
+        top: auto;
+        right: auto;
+        bottom: 5%;
+        left: 5%;
+        width: 100px;
+    }
+}
+.pagination_sec8 div[class^="swiper-button"]::after{
+    display: none;
+}
+.pagination_sec8 div[class^="swiper-button"]{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
 }
