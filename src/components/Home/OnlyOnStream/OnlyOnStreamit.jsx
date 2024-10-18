@@ -18,7 +18,7 @@ function OnlyOnStreamit({
 }) {
 
   return (
-    <section className="section-4 relative text-white font-light mx-auto my-16 w-11/12">
+    <section className="section-4 relative text-white font-light mx-auto mt-16 pb-5 w-11/12">
           <h2 className="text-xl md:text-2xl mb-4 flex justify-between"><span>{title}</span><span className="netflix text-lg cursor-pointer">View All</span></h2>
         <Swiper
           modules={[Navigation]}

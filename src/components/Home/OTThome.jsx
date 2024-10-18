@@ -14,7 +14,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import OnlyOnStreamit from './OnlyOnStream/OnlyOnStreamit';
-
+import ContinueWatching from './OnlyOnStream/ContinueWatching';
 
 export const OTThome = () => {
   const { movies } = useContext(MovieContext);
@@ -31,6 +31,13 @@ export const OTThome = () => {
     { id: 10, src: "/image/cast/10.webp", name: "John Reilly", role: "Actor" },
     { id: 11, src: "/image/cast/11.webp", name: "Thomas Bailey", role: "Actress" },
   ];
+
+  const [activeSeason, setActiveSeason] = useState(1);
+  const handleSeasonClick = (season) => {
+    if (season !== activeSeason) {
+      setActiveSeason(season); // Only update if the season is different
+    }
+  };
 
   const swiper00Ref = useRef(null);
   const swiper01Ref = useRef(null);
@@ -260,74 +267,17 @@ export const OTThome = () => {
         </div>
       </section>
       {/* section 2 Continue Watching */}
-      <section className="relative text-white font-light mx-auto w-11/12 mt-16">
-        <h2 className="text-xl md:text-2xl mb-10 mt-2">Continue Watching</h2>
-        <Swiper
-          modules={[Navigation]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          breakpoints={{
-            0: { slidesPerView: 2, spaceBetween: 10 },
-            768: { slidesPerView: 3, spaceBetween: 30 },
-            1024: { slidesPerView: 5, spaceBetween: 30 },
-          }}
-        >
-          <SwiperSlide>
-            <Link to="/moviedetail">
-              <img src="/image/continue-watch/01.webp" alt="" className="continue-image" />
-            </Link>
-            <div className="absolute bottom-1 left-0 h-0.5 netflix-bg" style={{ width: '30%' }}></div>
-            <div className="absolute bottom-1 right-0 h-0.5 bg-gray-500" style={{ width: '70%' }}></div>
-            <span className="absolute bottom-2 left-2 text-gray-300 hidden md:block">70 of 230 m</span>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link to="/moviedetail">
-              <img src="/image/continue-watch/02.webp" alt="" className="continue-image" />
-            </Link>
-            <div className="absolute bottom-1 left-0 h-0.5 netflix-bg" style={{ width: '60%' }}></div>
-            <div className="absolute bottom-1 right-0 h-0.5 bg-gray-500" style={{ width: '40%' }}></div>
-            <span className="absolute bottom-2 left-2 text-gray-300 hidden md:block">70 of 230 m</span>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link to="/moviedetail">
-              <img src="/image/continue-watch/03.webp" alt="" className="continue-image" />
-            </Link>
-            <div className="absolute bottom-1 left-0 h-0.5 netflix-bg" style={{ width: '50%' }}></div>
-            <div className="absolute bottom-1 right-0 h-0.5 bg-gray-500" style={{ width: '50%' }}></div>
-            <span className="absolute bottom-2 left-2 text-gray-300 hidden md:block">70 of 230 m</span>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link to="/moviedetail">
-              <img src="/image/continue-watch/04.webp" alt="" className="continue-image" />
-            </Link>
-            <div className="absolute bottom-1 left-0 h-0.5 netflix-bg" style={{ width: '30%' }}></div>
-            <div className="absolute bottom-1 right-0 h-0.5 bg-gray-500" style={{ width: '70%' }}></div>
-            <span className="absolute bottom-2 left-2 text-gray-300 hidden md:block">70 of 230 m</span>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link to="/moviedetail">
-              <img src="/image/continue-watch/05.webp" alt="" className="continue-image" />
-            </Link>
-            <div className="absolute bottom-1 left-0 h-0.5 netflix-bg" style={{ width: '30%' }}></div>
-            <div className="absolute bottom-1 right-0 h-0.5 bg-gray-500" style={{ width: '70%' }}></div>
-            <span className="absolute bottom-2 left-2 text-gray-300 hidden md:block">70 of 230 m</span>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link to="/moviedetail">
-              <img src="/image/continue-watch/06.webp" alt="" className="continue-image" />
-            </Link>
-            <div className="absolute bottom-1 left-0 h-0.5 netflix-bg" style={{ width: '30%' }}></div>
-            <div className="absolute bottom-1 right-0 h-0.5 bg-gray-500" style={{ width: '70%' }}></div>
-            <span className="absolute bottom-2 left-2 text-gray-300 hidden md:block">70 of 230 m</span>
-          </SwiperSlide>
-          <div className="navigation_">
-            <div className="swiper-button-prev hover-bg-red"><FontAwesomeIcon icon={faChevronLeft} style={{color: "#fafafa",}} /></div>
-            <div className="swiper-button-next hover-bg-red"><FontAwesomeIcon icon={faChevronRight} style={{color: "#fafafa",}} /></div>
-          </div>
-        </Swiper>
-      </section>
+      <ContinueWatching
+        title='Continue Watching'
+        imgLink={[
+          '/image/continue-watch/01.webp',
+          '/image/continue-watch/02.webp',
+          '/image/continue-watch/03.webp',
+          '/image/continue-watch/04.webp',
+          '/image/continue-watch/05.webp',
+          '/image/continue-watch/06.webp',
+        ]}
+        />
       {/* section 3 Top ten Movie To Watch */}
       <section className="section-3 relative text-white font-light mx-auto mt-16 w-11/12">
         <h2 className="text-xl md:text-2xl mb-10 mt-2 flex justify-between"><span>Top ten Movie To Watch</span><span className="netflix text-lg cursor-pointer">View All</span></h2>
@@ -621,12 +571,16 @@ export const OTThome = () => {
       />
       {/* section 8 */}
       <section className="section-8 relative w-full h-auto text-white font-light">
-      <Swiper
+        <Swiper
           loop={true}
           speed={600}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
           effect="fade"
           fadeEffect={{ crossFade: true }}
-          modules={[EffectFade]}
+          modules={[EffectFade, Navigation]}
           className=""
         >
           <SwiperSlide>
@@ -647,9 +601,22 @@ export const OTThome = () => {
               </div>
               <div className="sec8-espisode text-white font-light">
                 <p className="font-medium text-xl mt-8 ml-8 mb-2">All Episode</p>
-                <p className="ml-8 text-base"><span id="sec8-season1" className="netflix cursor-pointer">Season 1</span><span id="sec8-season2" className="mx-5 cursor-pointer">Season 2</span><span id="sec8-season3" className="cursor-pointer">Season 3</span></p>
+                <p className="ml-8 text-base">
+                  <button onClick={() => handleSeasonClick(1)}
+                    className={`${activeSeason === 1 ? 'netflix' : ''}`}>
+                    Season 1
+                  </button>
+                  <button onClick={() => handleSeasonClick(2)}
+                    className={`${activeSeason === 2 ? 'netflix' : ''} mx-5`}>
+                    Season 2
+                  </button>
+                  <button onClick={() => handleSeasonClick(3)}
+                    className={`${activeSeason === 3 ? 'netflix' : ''}`}>
+                    Season 3
+                  </button>
+                </p>
                 <hr className="my-3 w-full border-slate-800"/>
-                <ul id="sec8-season1-content" className="sec8-season1-content ml-3">
+                <ul className={`${activeSeason === 1 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/01.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -679,7 +646,7 @@ export const OTThome = () => {
                     </div>
                   </li>
                 </ul>
-                <ul id="sec8-season2-content" className="sec8-season2-content ml-3 hidden">
+                <ul className={`${activeSeason === 2 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/05.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -709,7 +676,7 @@ export const OTThome = () => {
                     </div>
                   </li>
                 </ul>
-                <ul id="sec8-season3-content" className="sec8-season3-content ml-3 hidden">
+                <ul className={`${activeSeason === 3 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/09.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -760,9 +727,22 @@ export const OTThome = () => {
               </div>
               <div className="sec8-espisode text-white font-light">
                 <p className="font-medium text-xl mt-8 ml-8 mb-2">All Episode</p>
-                <p className="ml-8 text-base"><span id="sec8-season1-s2" className="netflix cursor-pointer">Season 1</span><span id="sec8-season2-s2" className="mx-5 cursor-pointer">Season 2</span><span id="sec8-season3-s2" className="cursor-pointer">Season 3</span></p>
+                <p className="ml-8 text-base">
+                  <button onClick={() => handleSeasonClick(1)}
+                    className={`${activeSeason === 1 ? 'netflix' : ''}`}>
+                    Season 1
+                  </button>
+                  <button onClick={() => handleSeasonClick(2)}
+                    className={`${activeSeason === 2 ? 'netflix' : ''} mx-5`}>
+                    Season 2
+                  </button>
+                  <button onClick={() => handleSeasonClick(3)}
+                    className={`${activeSeason === 3 ? 'netflix' : ''}`}>
+                    Season 3
+                  </button>
+                </p>
                 <hr className="my-3 w-full border-slate-800"/>
-                <ul id="sec8-season1-content-s2" className="sec8-season1-content ml-3">
+                <ul className={`${activeSeason === 1 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/13.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -792,7 +772,7 @@ export const OTThome = () => {
                     </div>
                   </li>
                 </ul>
-                <ul id="sec8-season2-content-s2" className="sec8-season2-content ml-3 hidden">
+                <ul className={`${activeSeason === 2 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/17.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -822,7 +802,7 @@ export const OTThome = () => {
                     </div>
                   </li>
                 </ul>
-                <ul id="sec8-season3-content-s2" className="sec8-season3-content ml-3 hidden">
+                <ul className={`${activeSeason === 3 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/21.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -873,9 +853,22 @@ export const OTThome = () => {
               </div>
               <div className="sec8-espisode text-white font-light">
                 <p className="font-medium text-xl mt-8 ml-8 mb-2">All Episode</p>
-                <p className="ml-8 text-base"><span id="sec8-season1-s3" className="netflix cursor-pointer">Season 1</span><span id="sec8-season2-s3" className="mx-5 cursor-pointer">Season 2</span><span id="sec8-season3-s3" className="cursor-pointer">Season 3</span></p>
+                <p className="ml-8 text-base">
+                  <button onClick={() => handleSeasonClick(1)}
+                    className={`${activeSeason === 1 ? 'netflix' : ''}`}>
+                    Season 1
+                  </button>
+                  <button onClick={() => handleSeasonClick(2)}
+                    className={`${activeSeason === 2 ? 'netflix' : ''} mx-5`}>
+                    Season 2
+                  </button>
+                  <button onClick={() => handleSeasonClick(3)}
+                    className={`${activeSeason === 3 ? 'netflix' : ''}`}>
+                    Season 3
+                  </button>
+                </p>
                 <hr className="my-3 w-full border-slate-800"/>
-                <ul id="sec8-season1-content-s3" className="sec8-season1-content ml-3">
+                <ul className={`${activeSeason === 1 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/25.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -905,7 +898,7 @@ export const OTThome = () => {
                     </div>
                   </li>
                 </ul>
-                <ul id="sec8-season2-content-s3" className="sec8-season2-content ml-3 hidden">
+                <ul className={`${activeSeason === 2 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/29.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -935,7 +928,7 @@ export const OTThome = () => {
                     </div>
                   </li>
                 </ul>
-                <ul id="sec8-season3-content-s3" className="sec8-season3-content ml-3 hidden">
+                <ul className={`${activeSeason === 3 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
                     <div className="sec8-tvshow"><img src="/image/tv-show/33.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
@@ -968,8 +961,102 @@ export const OTThome = () => {
               </div>
             </div>
           </SwiperSlide>
+          <div className="pagination_sec8">
+            <div className="swiper-button-prev hover-bg-red"><FontAwesomeIcon icon={faChevronLeft} style={{color: "#fafafa",}} /></div>
+            <div className="swiper-button-next hover-bg-red"><FontAwesomeIcon icon={faChevronRight} style={{color: "#fafafa",}} /></div>
+          </div>
         </Swiper>
       </section>
+      {/* section 9 */}
+      <section className="section-10 relative text-white font-light mx-auto mt-16 w-11/12">
+        <h2 className="text-xl md:text-2xl mb-7 flex justify-between"><span>Movie Geners</span><span className="netflix text-lg cursor-pointer">View All</span></h2>
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          breakpoints={{
+            0: { slidesPerView: 2, spaceBetween: 10 },
+            768: { slidesPerView: 3, spaceBetween: 30 },
+            1024: { slidesPerView: 5, spaceBetween: 30 },
+          }}
+        >
+          <SwiperSlide>
+            <div className="only-onstream-item w-full">
+              <div className="sec9-image bg-[url('/image/genre/01.webp')]">
+                <p className="font-normal text-xl">Action</p>
+                <div className="sec9-underline netflix-bg"></div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="only-onstream-item w-full">
+              <div className="sec9-image bg-[url('/image/genre/02.webp')]">
+                <p className="font-normal text-xl">Adventure</p>
+                <div className="sec9-underline netflix-bg"></div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="only-onstream-item w-full">
+              <div className="sec9-image bg-[url('/image/genre/03.webp')]">
+                <p className="font-normal text-xl">Animation</p>
+                <div className="sec9-underline netflix-bg"></div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="only-onstream-item w-full">
+              <div className="sec9-image bg-[url('/image/genre/04.webp')]">
+                <p className="font-normal text-xl">Crime</p>
+                <div className="sec9-underline netflix-bg"></div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="only-onstream-item w-full">
+              <div className="sec9-image bg-[url('/image/genre/05.webp')]">
+                <p className="font-normal text-xl">Horror</p>
+                <div className="sec9-underline netflix-bg"></div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="only-onstream-item w-full">
+              <div className="sec9-image bg-[url('/image/genre/06.webp')]">
+                <p className="font-normal text-xl">Mystery</p>
+                <div className="sec9-underline netflix-bg"></div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="only-onstream-item w-full">
+              <div className="sec9-image bg-[url('/image/genre/07.webp')]">
+                <p className="font-normal text-xl">Romance</p>
+                <div className="sec9-underline netflix-bg"></div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <div className="navigation_">
+            <div className="swiper-button-prev hover-bg-red"><FontAwesomeIcon icon={faChevronLeft} style={{color: "#fafafa",}} /></div>
+            <div className="swiper-button-next hover-bg-red"><FontAwesomeIcon icon={faChevronRight} style={{color: "#fafafa",}} /></div>
+          </div>
+        </Swiper>
+      </section>
+      {/* section 10 */}
+      <OnlyOnStreamit
+        title='Recommended For You'
+        imgLink={[
+          '/image/movie/recommended/01.webp',
+          '/image/movie/recommended/02.webp',
+          '/image/movie/recommended/03.webp',
+          '/image/movie/recommended/04.webp',
+          '/image/movie/recommended/05.webp',
+          '/image/movie/recommended/06.webp',
+          '/image/movie/recommended/07.webp',
+        ]}
+      />
     </main>
   )
 }

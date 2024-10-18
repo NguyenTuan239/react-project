@@ -13,9 +13,36 @@ import { Navigation, Autoplay, EffectFade} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import ContinueWatching from './OnlyOnStream/ContinueWatching';
+import OnlyOnStreamit from './OnlyOnStream/OnlyOnStreamit';
 
 const Home = () => {
+
   const { movies } = useContext(MovieContext);
+
+  const [isWatchtrailer, setWatchtrailer] = useState(false);
+  const handleWatchTrailerClick = () => {
+    setWatchtrailer((prev) => !prev);
+  }
+
+  const trailerRef = useRef(null);
+  const trailerBtRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        !trailerRef.current.contains(event.target) &&
+        trailerBtRef.current.contains(event.target)
+      ) {
+        setWatchtrailer(false);
+      }
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
   return (
     <main className='w-full bg-stone-950 text-slate-200'>
       {/* section 1  */}
@@ -60,6 +87,11 @@ const Home = () => {
                     <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">stram now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
                   </div>
                 </div>
+                <button
+                  onClick={handleWatchTrailerClick}
+                  className="homePG-sec1-button hidden xl:block">
+                      Watch Trailer
+                </button>
               </div>
             ))}
           </SwiperSlide>
@@ -91,6 +123,11 @@ const Home = () => {
                     <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">stram now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
                   </div>
                 </div>
+                <button
+                  onClick={handleWatchTrailerClick}
+                  className="homePG-sec1-button hidden xl:block">
+                      Watch Trailer
+                </button>
               </div>
             ))}
           </SwiperSlide>
@@ -122,6 +159,11 @@ const Home = () => {
                     <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">stram now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
                   </div>
                 </div>
+                <button
+                  onClick={handleWatchTrailerClick}
+                  className="homePG-sec1-button hidden xl:block">
+                      Watch Trailer
+                </button>
               </div>
             ))}
           </SwiperSlide>
@@ -130,7 +172,54 @@ const Home = () => {
             <div className="swiper-button-next hover-bg-red"><FontAwesomeIcon icon={faChevronRight} style={{color: "#fafafa",}} /></div>
         </div>
         </Swiper>
+        <div
+          ref={trailerBtRef}
+          className={`${isWatchtrailer ? '' : 'hidden'} home-trailer-container`}>
+          <video
+            ref={trailerRef}
+            id="my-video"
+            className="video-js detail-video"
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            data-setup="{}"
+          >
+            <source src="../image/video/trailer.mp4" type="video/mp4" />
+            <source src="../image/video/trailer.webm" type="video/webm" />
+            <p className="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <Link href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</Link>
+            </p>
+          </video>
+        </div>
       </section>
+      {/* section 2  */}
+      <ContinueWatching
+        title='Only On Streamit'
+        imgLink={[
+          '/image/continue-watch/01.webp',
+          '/image/continue-watch/02.webp',
+          '/image/continue-watch/03.webp',
+          '/image/continue-watch/04.webp',
+          '/image/continue-watch/05.webp',
+          '/image/continue-watch/06.webp',
+        ]}
+      />
+      <OnlyOnStreamit
+        title='Upcomging'
+        imgLink={[
+          '/image/movie/upcoming/01.webp',
+          '/image/movie/upcoming/02.webp',
+          '/image/movie/upcoming/03.webp',
+          '/image/movie/upcoming/04.webp',
+          '/image/movie/upcoming/05.webp',
+          '/image/movie/upcoming/06.webp',
+          '/image/movie/upcoming/07.webp',
+        ]}
+        />
     </main>
   )
 }

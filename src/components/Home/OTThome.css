@@ -212,7 +212,7 @@ object-fit: cover;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.65));
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.7));
     z-index: 2;
 }
 .only-onstream-item:hover{
@@ -248,7 +248,7 @@ object-fit: cover;
 }
 .only-onstream-item {
     padding-top: 12%;
-    padding-bottom: 3%;
+    padding-bottom: 6%;
 
 }
 .only-on-stream-icon{
@@ -447,7 +447,7 @@ object-fit: cover;
         transform: scale(1.2);
     }
 }
-.sec8-season1-content, .sec8-season2-content, .sec8-season3-content{
+.otthome-sec8-content{
     transform-origin: top center;
     animation: sec8-showcontent 1s forwards ease-in-out;
 }
@@ -485,10 +485,91 @@ object-fit: cover;
 .pagination_sec8 div[class^="swiper-button"]{
     width: 30px;
     height: 30px;
-    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    border: 1px solid rgb(145, 143, 143);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     transition: all 0.5s;
+}
+/* main section 9 css*/
+.sec9-image{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 7/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 1;
+}
+.sec9-underline{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+}
+
+/* Home css */
+.homePG-sec1-button {
+    padding: 40px 20px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 400px;
+    right: 15%;
+    overflow: hidden;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.homePG-sec1-button::after,
+.homePG-sec1-button::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: var(--hover-backgournd-color);
+    top: 0;
+    transform: skewX(35deg);
+    transition: all 0.5s;
+    z-index: -1;
+}
+.homePG-sec1-button::after {
+    left: -20px;
+}
+.homePG-sec1-button::before {
+    right: -20px;
+}
+.homePG-sec1-button:hover::after {
+    width: 50%;
+    left: 0;
+}
+.homePG-sec1-button:hover::before {
+    width: 50%;
+    right: 0;
+}
+/* Home Movie Trailer css */
+.home-trailer-container{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #00000083;
+    z-index: 10;
+    #my-video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        height: auto;
+        transform: translate(-50%,-50%);
+    }
 }
