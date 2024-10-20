@@ -25,7 +25,7 @@ const Footer = () => {
   }, []);
 
   const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' }); // Cuộn lên đầu trang
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top of page
   };
 
   return (
@@ -37,6 +37,7 @@ const Footer = () => {
       >
         <FontAwesomeIcon icon={faChevronUp} />
       </button>
+      <hr className="mx-auto w-11/12 border-slate-700"></hr>
     <section className="w-full">
       <div className="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">
         <div>

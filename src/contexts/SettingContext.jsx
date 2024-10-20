@@ -1,7 +1,7 @@
-// src/contexts/setting.js
+
 import { createContext, useContext, useState, useEffect } from 'react';
 
-// Tạo Context với giá trị mặc định
+// Create Context with default value
 const SettingContext = createContext({
   direction: 'ltr',
   textColor: '#ca0606',
@@ -12,7 +12,7 @@ const SettingContext = createContext({
   toggleBGColor: () => {},
 });
 
-// Hook để sử dụng SettingContext
+// Hook to use SettingContext
 export const useSetting = () => useContext(SettingContext);
 
 // Provider cho SettingContext
@@ -22,7 +22,7 @@ export const SettingProvider = ({ children }) => {
   const [BGColor, setBGColor] = useState('#ff00002a');
   const [LogoColor, setLogoColor] = useState('/image/logo.webp');
 
-  // Khởi tạo giá trị từ localStorage
+  // Initialize value from localStorage
   useEffect(() => {
     const savedDirection = localStorage.getItem('direction') || 'ltr';
     const savedtextColor = localStorage.getItem('textColor') || '#ca0606';

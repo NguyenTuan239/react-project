@@ -110,7 +110,8 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-40 text-slate-200">
+    <header className="sticky top-0 w-full h-14 md:h-16  z-40 text-slate-200">
+      <div className='bg-stone-950/90 w-full h-14 md:h-16 absolute top-0'></div>
       {/* Web Navigation */}
       <section className="flex justify-center ">
         <Link to="otthome"><img src="/image/logo.webp" alt="logo" className="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"/></Link>
@@ -165,11 +166,11 @@ const Header = () => {
                   </div>
                 )}
               </NavLink>
-              <NavLink to="geners">
+              <NavLink to="genres">
                 {({ isActive }) => (
                   <div className="p-3 pl-5 relative bg-transparent">
                     <span className={`${isActive ? "web-nav-li-red-nothover" : "web-nav-li-red"} web-nav-li absolute top-1 left-3 w-48 h-9`}></span>
-                    Geners
+                    Genres
                   </div>
                 )}
               </NavLink>
@@ -631,11 +632,11 @@ const Header = () => {
               >
                 <div className="py-4 pr-4 pl-7 border-b border-slate-900 ">Playlist</div>
               </NavLink>
-              <NavLink to="geners"
+              <NavLink to="genres"
                 onClick={toggleMobieMenu}
                 className={({ isActive }) => `${isActive ? "netflix" : "hover-red"}`}
               >
-                <div className="py-4 pr-4 pl-7 border-b border-slate-900 ">Geners</div>
+                <div className="py-4 pr-4 pl-7 border-b border-slate-900 ">Genres</div>
               </NavLink>
               <NavLink to="cast"
                 onClick={toggleMobieMenu}

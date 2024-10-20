@@ -1,0 +1,215 @@
+/* css for Playlist page */
+.playlist-profile{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playlist-bg{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.playlist-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    padding: 18px;
+    .playlist-line{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: all 1s ease;
+    }
+}
+.playlist-nav:hover {
+    .playlist-line{
+        transform: scaleX(1);
+    }
+}
+.playlist-nav.toggle {
+    .playlist-line{
+        transform: scaleX(1);
+    }
+}
+.playlist-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-row-gap: 50px;
+}
+.playlist-card img{
+    transition: all 1s;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.playlist-card:hover img{
+    transform: scale(1.15);
+}
+@media (min-width: 768px) {
+    .playlist-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .playlist-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+.playlist-des{
+    transform-origin: top;
+    animation: playlist-des 0.7s ease-in-out forwards;
+}
+@keyframes playlist-des {
+    0%{
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.playlist-dialog {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+.creat-playlist-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 750px;
+    background-color: rgb(26, 26, 26);
+    padding: 40px;
+    color: white;
+    border-radius: 15px;
+}
+.playlist-dialog-exit{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.playlist-privacy-select {
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* For Safari and Chrome */
+    -moz-appearance: none; /* For Firefox */
+    background-image: none; /* Ensure no background arrow */
+    position: relative;
+    padding-right: 20px; 
+}
+
+.file-upload-input{
+    width: 100%;
+    height: 50px;
+    outline: none; 
+    background-color: black;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.file-upload-input::file-selector-button {
+    background-color: white;
+    color: rgb(189, 185, 185);
+    border: none;
+    padding: 13px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.file-upload-input:hover::file-selector-button {
+    background-color: rgb(201, 197, 197);
+    color: black;
+}
+/* css for Term of use page */
+.term-of-use-img{
+    width: 100%;
+    height: 208px;
+    object-fit: cover;
+}
+.term-of-use-hl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.custom-list li::before {
+    content: "•"; /* Add bullet point */
+    color: rgb(255, 255, 255); /* Bullet color */
+    font-size: 20px; /* Adjust bullet size */
+    margin-right: 10px; /* Space between bullet and text */
+}
+/* Cast Grid Css */
+.cast-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+.contact-us-sec4-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+@media (min-width: 640px) {
+    .cast-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .cast-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .contact-us-sec4-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .cast-grid{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .contact-us-sec4-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}

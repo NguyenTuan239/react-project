@@ -1,0 +1,98 @@
+
+.login-bar{
+    position: absolute;
+    width: 96%;
+    height: 680px;
+    margin: auto;
+    background-color: rgb(12, 10, 9);
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: start;
+    z-index: -3;
+}
+.register-b{
+    position: absolute;
+    width: 96%;
+    height: 680px;
+    margin: auto;
+    background-color: rgb(12, 10, 9);
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: start;
+    z-index: -3;
+}
+.register-2col{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    width: 100%;
+}
+.login-input {
+    border: 1px solid gray;
+    width: 100%;
+    height: 50px;
+    outline: none; 
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: rgb(29, 28, 28);
+}
+.reset-password-bar{
+    height: 430px;
+}
+.register-bar{
+    height: 870px;
+}
+@media (min-width: 1023px) {
+    .login-bar{
+        width: 40%;
+        max-width: 570px;
+    }
+    .register-2col{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+    .register-bar{
+        height: 700px;
+        width: 65%;
+        max-width: 900px;
+    }
+}
+/* FAQ Css */
+.faq-container{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    max-width: 1200px;
+}
+.faq-plus-line{
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.faq-des {
+    position: relative;
+    width: 100%;
+    padding: 0 24px; 
+    overflow: hidden; 
+    transition: all 0.5s ease;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    &.active{
+        max-height: 500px; 
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+/* Pricing Plan Css */
+.linear-red{
+    background-image: linear-gradient(to bottom, var(--main-color),rgb(41, 37, 36,0));
+}

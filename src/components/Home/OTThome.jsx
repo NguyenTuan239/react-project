@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
-import { MovieContext } from '../../contexts/MovieContext';
 import { Link, NavLink } from 'react-router-dom';
 import './OTThome.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight, faCaretRight,faChevronDown,faChevronUp, faShareNodes, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight, faCaretRight, faShareNodes, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 // Import Swiper React components
@@ -15,9 +14,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import OnlyOnStreamit from './OnlyOnStream/OnlyOnStreamit';
 import ContinueWatching from './OnlyOnStream/ContinueWatching';
+import VerticalSlide from './OnlyOnStream/VerticalSlide';
 
 export const OTThome = () => {
-  const { movies } = useContext(MovieContext);
   const castData = [
     { id: 1, src: "/image/cast/01.webp", name: "John Abraham", role: "Actress" },
     { id: 2, src: "/image/cast/02.webp", name: "Leena Burton", role: "Actor" },
@@ -41,8 +40,6 @@ export const OTThome = () => {
 
   const swiper00Ref = useRef(null);
   const swiper01Ref = useRef(null);
-  const swiper4Ref = useRef(null); 
-  const swiper5Ref = useRef(null); 
 
   useEffect(() => {
     const swiper00 = swiper00Ref.current.swiper;
@@ -57,47 +54,6 @@ export const OTThome = () => {
     swiper01.on('slideChangeTransitionStart', () => {
       swiper00.slideToLoop(swiper01.realIndex);
     });
-  }, []);
-
-  useEffect(() => {
-    const swiper4 = swiper4Ref.current.swiper;
-    const swiper5 = swiper5Ref.current.swiper;
-    // Sync swiper5 -> swiper4
-    swiper5.on('slideChangeTransitionStart', () => {
-      swiper4.slideToLoop(swiper5.realIndex);
-    });
-    // Sync swiper4 -> swiper5
-    swiper4.on('slideChangeTransitionStart', () => {
-      swiper5.slideToLoop(swiper4.realIndex);
-    });
-    // Handle click events on swiper4
-    swiper4.on('click', (swiper) => {
-      const clickedSlide = swiper.clickedSlide;
-      if (clickedSlide) {
-        const realIndex = clickedSlide.getAttribute('data-swiper-slide-index');
-        if (realIndex !== undefined) {
-          swiper4.slideToLoop(realIndex);
-        }
-      }
-    });
-    // Manage sec5-red-line on the first slide of swiper4
-    swiper4.on('slideChangeTransitionStart', (swiper) => {
-      document.querySelectorAll('.swiper-slide .sec5-red-line').forEach((line) => {
-        line.style.display = 'none';
-      });
-
-      const firstVisibleSlide = swiper.slides[swiper.activeIndex];
-      const redLine = firstVisibleSlide.querySelector('.sec5-red-line');
-      if (redLine) {
-        redLine.style.display = 'block';
-      }
-    });
-    // Cleanup event listeners on unmount
-    return () => {
-      swiper5.off('slideChangeTransitionStart');
-      swiper4.off('slideChangeTransitionStart');
-      swiper4.off('click');
-    };
   }, []);
 
   return (
@@ -116,97 +72,86 @@ export const OTThome = () => {
           className="mySwiper00"
         >
           <SwiperSlide>
-          {movies
-            .filter((movie) => movie.id === 2)
-            .map((movie) => (
-              <div key={movie.id} className='otthome-sec1-bg '>
+              <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
                   <img src="/image/movie/ott1.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
                     <span className="bg-white text-xs  px-4 py-2 text-black">PG</span>
-                    <span className="text-muted ml-4"><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[0]}</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[1]}</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[2]}</Link></span>
+                    <span className="text-muted ml-4"><Link className="transition-all duration-500 ease-in-out hover-red">Adventure</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">Thriller</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">Drama</Link></span>
                   </div>
-                  <h2 className="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">{ movie.title}</h2>
+                  <h2 className="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">The Hunter</h2>
                   <p className="moviePoster-content3 mt-1 clamped-text">
-                    {movie.description}
+                  After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
+                  rises following a tragic loss. Meanwhile, Daemon prepares for war.
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
-                    <span className="font-medium text-white mr-4 text-nowrap">⭐ {movie.rating}/10</span>
+                    <span className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
                     <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
-                    <span className="ml-4 text-nowrap">{movie.duration} mins</span>
-                    <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">{movie.genres[0]}</Link></span>
-                    <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">{movie.actors.join(', ')}</Link></span>
+                    <span className="ml-4 text-nowrap">2hr 6mins</span>
+                    <span className="netflix ml-4 text-nowrap">Genres:<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Drama</Link></span>
+                    <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Jeffrey Silver</Link></span>
                   </div>
                   <div className='relative h-10 w-40 mb-8 moviePoster-content5'>
                     <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">stram now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
                   </div>
                 </div>
               </div>
-            ))}
           </SwiperSlide>
           <SwiperSlide>
-          {movies
-            .filter((movie) => movie.id === 3)
-            .map((movie) => (
-              <div key={movie.id} className='otthome-sec1-bg '>
+              <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
                   <img src="/image/movie/ott2.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
-                    <span className="bg-white text-xs  px-4 py-2 text-black">PG</span>
-                    <span className="text-muted ml-4"><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[0]}</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[1]}</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[2]}</Link></span>
+                    <span className="bg-white text-xs  px-4 py-2 text-black">NC-17</span>
+                    <span className="text-muted ml-4"><Link className="transition-all duration-500 ease-in-out hover-red">Animation</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">Sci-Fi</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">Action</Link></span>
                   </div>
-                  <h2 className="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">{ movie.title}</h2>
+                  <h2 className="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">The Mandalorian</h2>
                   <p className="moviePoster-content3 mt-1 clamped-text">
-                    {movie.description}
+                  After the fall of the Galactic Empire, a lone gunfighter makes his way through the outer reaches of the lawless galaxy. The show follows the adventures of a lone Mandalorian bounty hunter, Din Djarin, as he navigates the outer reaches of...
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
-                    <span className="font-medium text-white mr-4 text-nowrap">⭐ {movie.rating}/10</span>
+                    <span className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
                     <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
-                    <span className="ml-4 text-nowrap">{movie.duration} mins</span>
-                    <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">{movie.genres[0]}</Link></span>
-                    <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">{movie.actors.join(', ')}</Link></span>
+                    <span className="ml-4 text-nowrap">2hr 26mins</span>
+                    <span className="netflix ml-4 text-nowrap">Genres:<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Sci-Fi</Link></span>
+                    <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">James Chinlund</Link></span>
                   </div>
                   <div className='relative h-10 w-40 mb-8 moviePoster-content5'>
                     <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">stram now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
                   </div>
                 </div>
               </div>
-            ))}
           </SwiperSlide>
           <SwiperSlide>
-          {movies
-            .filter((movie) => movie.id === 4)
-            .map((movie) => (
-              <div key={movie.id} className='otthome-sec1-bg '>
+              <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
                   <img src="/image/movie/ott3.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
                     <span className="bg-white text-xs  px-4 py-2 text-black">PG</span>
-                    <span className="text-muted ml-4"><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[0]}</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[1]}</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">{movie.genres[2]}</Link></span>
+                    <span className="text-muted ml-4"><Link className="transition-all duration-500 ease-in-out hover-red">History</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">Thriller</Link><span className="netflix mx-2">•</span><Link className="transition-all duration-500 ease-in-out hover-red">Drama</Link></span>
                   </div>
-                  <h2 className="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">{ movie.title}</h2>
+                  <h2 className="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">Better Call Saul</h2>
                   <p className="moviePoster-content3 mt-1 clamped-text">
-                    {movie.description}
+                  After the fall of the Galactic Empire, a lone gunfighter makes his way through the outer reaches of the lawless galaxy. The show follows the adventures of a lone Mandalorian bounty hunter, Din Djarin, as he navigates the outer reaches of...
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
-                    <span className="font-medium text-white mr-4 text-nowrap">⭐ {movie.rating}/10</span>
+                    <span className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
                     <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
-                    <span className="ml-4 text-nowrap">{movie.duration} mins</span>
-                    <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">{movie.genres[0]}</Link></span>
-                    <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">{movie.actors.join(', ')}</Link></span>
+                    <span className="ml-4 text-nowrap">2hr 6mins</span>
+                    <span className="netflix ml-4 text-nowrap">Genres:<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Drama</Link></span>
+                    <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Jeffrey Silver</Link></span>
                   </div>
                   <div className='relative h-10 w-40 mb-8 moviePoster-content5'>
                     <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">stram now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
                   </div>
                 </div>
               </div>
-            ))}
           </SwiperSlide>
         </Swiper>
         {/* Swiper 01 with navigation and slideToClickedSlide */}
@@ -226,40 +171,28 @@ export const OTThome = () => {
             className="mySwiper01 h-full"
           >
             <SwiperSlide>
-            {movies
-            .filter((movie) => movie.id === 2)
-            .map((movie) => (
-            <div key={movie.id} className="item2 bg-[url('/image/movie/ott1.webp')]">
+            <div className="item2 bg-[url('/image/movie/ott1.webp')]">
                 <div className="poster-card-des">
-                  <p className="font-medium text-white">{ movie.title}</p>
-                  <p className="font-light text-sm text-white">{movie.duration} mins</p>
+                  <p className="font-medium text-white">The Hunter</p>
+                  <p className="font-light text-sm text-white">2hr 6 minute</p>
                 </div>
               </div>
-            ))}
             </SwiperSlide>
             <SwiperSlide>
-            {movies
-            .filter((movie) => movie.id === 3)
-            .map((movie) => (
-            <div key={movie.id} className="item2 bg-[url('/image/movie/ott2.webp')]">
+            <div className="item2 bg-[url('/image/movie/ott2.webp')]">
                 <div className="poster-card-des">
-                  <p className="font-medium text-white">{ movie.title}</p>
-                  <p className="font-light text-sm text-white">{movie.duration} mins</p>
+                  <p className="font-medium text-white">The Mandalorian</p>
+                  <p className="font-light text-sm text-white">2hr 14 minute</p>
                 </div>
               </div>
-            ))}
             </SwiperSlide>
             <SwiperSlide>
-            {movies
-            .filter((movie) => movie.id === 4)
-            .map((movie) => (
-            <div key={movie.id} className="item2 bg-[url('/image/movie/ott3.webp')]">
+            <div className="item2 bg-[url('/image/movie/ott3.webp')]">
                 <div className="poster-card-des">
-                  <p className="font-medium text-white">{ movie.title}</p>
-                  <p className="font-light text-sm text-white">{movie.duration} mins</p>
+                  <p className="font-medium text-white">Better call saul</p>
+                  <p className="font-light text-sm text-white">2hr 55 minute</p>
                 </div>
               </div>
-            ))}
             </SwiperSlide>
             <div className="prev-button hover-bg-red"><FontAwesomeIcon icon={faChevronLeft} style={{color: "#fafafa",}} /></div>
             <div className="next-button hover-bg-red"><FontAwesomeIcon icon={faChevronRight} style={{color: "#fafafa",}} /></div>
@@ -382,150 +315,15 @@ export const OTThome = () => {
         ]}
         />
       {/* section 5  */}
-      <section className="section-5 relative w-full h-auto text-white font-light">
-        <Swiper
-          ref={swiper5Ref}
-          loop={true}
-          speed={600}
-          effect="fade"
-          fadeEffect={{ crossFade: true }}
-          modules={[EffectFade]}
-          direction={'vertical'}
-          className=""
-        >
-          <SwiperSlide>
-          <div className="sec5-bg bg-[url('/image/top-10/01.webp')]">
-              <div className="sec5-Poster text-gray-300 p-3 z-10">
-              <div className="moviePoster-content1 flex items-center font-bold pb-3">
-                <span className="text-muted">Comedy<span className="netflix mx-2">•</span>Romance<span className="netflix mx-2">•</span>Action</span>
-              </div>
-              <h2 className="my-2 text-3xl font-medium">Lostti N Sacee</h2>
-              <p className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5 <span className="ml-4 font-thin">2hr 30mins</span></p>
-              <p className="sec5-content my-3">
-                After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
-                rises following a tragic loss. Meanwhile, Daemon prepares for war.
-              </p>
-              <div className='relative h-10 w-40 mb-8 moviePoster-content5'>
-                    <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">play now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
-              </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="sec5-bg bg-[url('/image/top-10/02.webp')]">
-              <div className="sec5-Poster text-gray-300 p-3 z-10">
-                <div className="moviePoster-content1 flex items-center font-bold pb-3">
-                  <span className="text-muted">Comedy<span className="netflix mx-2">•</span>Romance<span className="netflix mx-2">•</span>Action</span>
-                </div>
-                <h2 className="my-2 text-3xl font-medium">Ret Seap</h2>
-                <p className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5 <span className="ml-4 font-thin">3hr 0mins</span></p>
-                <p className="sec5-content mt-1">
-                  After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
-                  rises following a tragic loss. Meanwhile, Daemon prepares for war.
-                </p>
-                <div className='relative h-10 w-40 mb-8 moviePoster-content5'>
-                    <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">play now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
-              </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="sec5-bg bg-[url('/image/top-10/03.webp')]">
-              <div className="sec5-Poster text-gray-300 p-3 z-10">
-                <div className="moviePoster-content1 flex items-center font-bold pb-3">
-                  <span className="text-muted">Comedy<span className="netflix mx-2">•</span>Romance<span className="netflix mx-2">•</span>Action</span>
-                </div>
-                <h2 className="my-2 text-3xl font-medium">Avenger</h2>
-                <p className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5 <span className="ml-4 font-thin">2hr 45mins</span></p>
-                <p className="sec5-content mt-1">
-                  After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
-                  rises following a tragic loss. Meanwhile, Daemon prepares for war.
-                </p>
-                <div className='relative h-10 w-40 mb-8 moviePoster-content5'>
-                    <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">play now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
-              </div>
-              </div>
-              </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="sec5-bg bg-[url('/image/top-10/04.webp')]">
-              <div className="sec5-Poster text-gray-300 p-3 z-10">
-                <div className="moviePoster-content1 flex items-center font-bold pb-3">
-                  <span className="text-muted">Comedy<span className="netflix mx-2">•</span>Romance<span className="netflix mx-2">•</span>Action</span>
-                </div>
-                <h2 className="my-2 text-3xl font-medium">Logan</h2>
-                <p className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5 <span className="ml-4 font-thin">1hr 50mins</span></p>
-                <p className="sec5-content mt-1">
-                  After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
-                  rises following a tragic loss. Meanwhile, Daemon prepares for war.
-                </p>
-                <div className='relative h-10 w-40 mb-8 moviePoster-content5'>
-                    <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">play now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
-              </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="sec5-bg bg-[url('/image/top-10/05.webp')]">
-              <div className="sec5-Poster text-gray-300 p-3 z-10">
-                <div className="moviePoster-content1 flex items-center font-bold pb-3">
-                  <span className="text-muted">Comedy<span className="netflix mx-2">•</span>Romance<span className="netflix mx-2">•</span>Action</span>
-                </div>
-                <h2 className="my-2 text-3xl font-medium">Black Queen</h2>
-                <p className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5 <span className="ml-4 font-thin">2hr 10mins</span></p>
-                <p className="sec5-content mt-1">
-                  After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
-                  rises following a tragic loss. Meanwhile, Daemon prepares for war.
-                </p>
-                <div className='relative h-10 w-40 mb-8 moviePoster-content5'>
-                    <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">play now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
-              </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-        <div className="sec5-image-slide hidden md:block">
-          <Swiper
-            ref={swiper4Ref}
-            loop={true}
-            speed={600}
-            slidesPerView={3}
-            spaceBetween={20}
-            slideToClickedSlide={true}
-            touchRatio={0.2}
-            navigation={{
-              nextEl: '.sec5-next',
-              prevEl: '.sec5-prev',
-            }}
-            modules={[Navigation]}
-            direction={'vertical'}
-            className="h-full"
-          >
-            <SwiperSlide>
-              <img src="/image/top-10/01.webp" alt=""/>
-              <div className="sec5-red-line absolute w-full h-1 netflix-bg bottom-0 z-40"></div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/image/top-10/02.webp" alt=""/>
-              <div className="sec5-red-line hidden absolute w-full h-1 netflix-bg bottom-0 z-40"></div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/image/top-10/03.webp" alt=""/>
-              <div className="sec5-red-line hidden absolute w-full h-1 netflix-bg bottom-0 z-40"></div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/image/top-10/04.webp" alt=""/>
-              <div className="sec5-red-line hidden absolute w-full h-1 netflix-bg bottom-0 z-40"></div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/image/top-10/05.webp" alt=""/>
-              <div className="sec5-red-line hidden absolute w-full h-1 netflix-bg bottom-0 z-40"></div>
-            </SwiperSlide>
-          </Swiper>
-          <div className="sec5-prev hover-bg-red"><FontAwesomeIcon icon={faChevronUp} style={{color: "#fafafa",}} /></div>
-          <div className="sec5-next hover-bg-red"><FontAwesomeIcon icon={faChevronDown} style={{color: "#fafafa",}} /></div>
-        </div>
-      </section>
+      <VerticalSlide
+        imgLink={[
+          '/image/top-10/01.webp',
+          '/image/top-10/02.webp',
+          '/image/top-10/03.webp',
+          '/image/top-10/04.webp',
+          '/image/top-10/05.webp',
+        ]}
+        />
       {/* section 6 Your Favourite Personnality */}
       <section className="section-6 relative text-white font-light mx-auto py-16 w-11/12">
         <h2 className="text-xl md:text-2xl mb-10 mt-2 flex justify-between"><span>Your Favourite Personnality</span><span className="netflix text-lg cursor-pointer">View All</span></h2>
