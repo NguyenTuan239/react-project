@@ -47,6 +47,9 @@ const router = createBrowserRouter(
         <Route path='register' element={<Register />} />
         <Route path='resetpassword' element={<ResetPassword />} />
 
+        {/* Redirect from '/' to '/otthome' */}
+        <Route path='/' element={<OTThome />} />
+
         <Route path='*' element={<div>Not Found</div>} />
       </Route>
 

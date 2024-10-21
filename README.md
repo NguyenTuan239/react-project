@@ -1,8 +1,18 @@
-# React + Vite
+# Movie Web App Frontend
+This is the frontend of a movie web application built with React.js. It allows users to browse, search, and view detailed information about movies, including ratings, trailers, and reviews. The app not connects to a movie API to provide real-time data. but already have a Context API for it.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🚀 Features
+Search Movies: Search for your favorite movies by title.
+Browse Categories: Explore movies by categories (Popular, Now Playing, Top Rated, Upcoming).
+Movie Details Page: View details such as description, release date, cast, and trailer.
+Responsive Design: Works on both desktop and mobile devices.
+Favorites List: Save movies to your favorites (optional with local storage).
+API Integration: Fetches movie data from TMDb API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Technologies Used
+React.js – JavaScript library for building user interfaces.
+React Router – For routing between pages.
+Context API– For making API requests.
+Tailwind CSS / CSS Modules – For styling the app.
+Context API.
