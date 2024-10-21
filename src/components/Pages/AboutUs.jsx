@@ -46,6 +46,7 @@ const AboutUs = () => {
           <p className="text-xl"><Link to="/otthome" className="netflix font-medium">Home</Link>&nbsp;/&nbsp;<span className="netflix">About Us</span></p>
         </div>
       </div>
+
       <section className="w-11/12 mx-auto my-7">
         <div className="flex flex-col items-center">
             <p className="text-4xl py-4 font-normal">Masterminds Team</p>
@@ -96,11 +97,11 @@ const AboutUs = () => {
                     <p>Branch</p>
                 </div>
                 <div className="text-center">
-                    <p className="netflix text-4xl my-4 font-semibold flex flex-nowrap"><NumberAnimation className="number-plus-500" targetNumber={500} increment={1} /> +</p>
+                    <div className="netflix text-4xl my-4 font-semibold flex flex-nowrap"><NumberAnimation className="number-plus-500" targetNumber={500} increment={1} /> +</div>
                     <p>Employee</p>
                 </div>
                 <div className="text-center">
-                    <p className="netflix text-4xl my-4 font-semibold flex flex-nowrap"><NumberAnimation className="number-plus-2000" targetNumber={2000} increment={4} /> +</p>
+                    <div className="netflix text-4xl my-4 font-semibold flex flex-nowrap"><NumberAnimation className="number-plus-2000" targetNumber={2000} increment={4} /> +</div>
                     <p>Clients</p>
                 </div>
             </div>

@@ -110,7 +110,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className="sticky top-0 w-full h-14 md:h-16  z-40 text-slate-200">
+    <header className="sticky top-0 w-full h-14 md:h-16  z-30 text-slate-200">
       <div className='bg-stone-950/90 w-full h-14 md:h-16 absolute top-0'></div>
       {/* Web Navigation */}
       <section className="flex justify-center ">
@@ -150,7 +150,7 @@ const Header = () => {
                   </div>
                 )}
               </NavLink>
-              <NavLink to="relatedmerchadise">
+              <NavLink to="relatedmerchandise">
                 {({ isActive }) => (
                   <div className="p-3 pl-5 relative bg-transparent">
                     <span className={`${isActive ? "web-nav-li-red-nothover" : "web-nav-li-red"} web-nav-li absolute top-1 left-3 w-48 h-9`}></span>
@@ -505,18 +505,18 @@ const Header = () => {
           </p>
           <div className="w-full h-0.5 mt-1 bg-stone-700"></div>
           <ul className="flex flex-col items-start justify-center ml-4">
-            <li className="p-3 cursor-pointer">
+            <Link to="/myaccount" className="p-3">
               <FontAwesomeIcon icon={faUser} />
               <span className="hover-red">My Account</span>
-            </li>
-            <li className="p-3 cursor-pointer">
+            </Link>
+            <Link to="" className="p-3">
               <FontAwesomeIcon icon={faPlus} />
               <span className="hover-red">Watchlist</span>
-            </li>
-            <li className="p-3 cursor-pointer">
+            </Link>
+            <Link to="" className="p-3">
               <FontAwesomeIcon icon={faStar} />
               <span className="hover-red">Subscription</span>
-            </li>
+            </Link>
           </ul>
           <Link
             to="login"

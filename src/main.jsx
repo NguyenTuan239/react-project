@@ -43,13 +43,15 @@ const router = createBrowserRouter(
 
         <Route path='termsofuse' element={<TermsOfUse />} />
         <Route path='moviedetail' element={<MovieDetail />} />
+        <Route path='login' element={<Login />} />
+        <Route path='register' element={<Register />} />
+        <Route path='resetpassword' element={<ResetPassword />} />
 
         <Route path='*' element={<div>Not Found</div>} />
       </Route>
 
-      <Route path='login' element={<Login />} />
-      <Route path='register' element={<Register />} />
-      <Route path='resetpassword' element={<ResetPassword />} />
+      
+      
       <Route path='errorpage1' element={<ErrorPage1 />} />
       <Route path='errorpage2' element={<ErrorPage2 />} />
       <Route path='comingsoon' element={<ComingSoon />} />

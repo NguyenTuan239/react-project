@@ -53,7 +53,7 @@ const ContactUs = () => {
       </section>
 
       <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29825.101859272927!2d106.67073349549447!3d20.866498032538214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b15a4559941%3A0xaaead3b47e5359a2!2zTmjDoCBow6F0IFRow6BuaCBwaOG7kSBI4bqjaSBQaMOybmc!5e0!3m2!1svi!2sjp!4v1727919715256!5m2!1svi!2sjp" width="100%" height="550" style={{border: '0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29825.101859272927!2d106.67073349549447!3d20.866498032538214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b15a4559941%3A0xaaead3b47e5359a2!2zTmjDoCBow6F0IFRow6BuaCBwaOG7kSBI4bqjaSBQaMOybmc!5e0!3m2!1svi!2sjp!4v1727919715256!5m2!1svi!2sjp" width="100%" height="550" style={{border: '0'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </section>
       
       <section className="w-11/12 mx-auto py-16">

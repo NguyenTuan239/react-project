@@ -50,7 +50,7 @@ const Setting = () => {
   }, []);
 
   return (
-    <div>
+    <div className='z-50'>
           <div id="setting-icon"
               ref={settingIconRef}
               onClick={handSettingIconClick}
@@ -62,7 +62,7 @@ const Setting = () => {
         className={`
         ${direction === 'ltr' ? 'right-0 reactive' : 'left-0 reve'} 
         ${isSettingIconActive ? 'active' : ''} 
-              setting-bar fixed top-32 h-64 w-72 z-40 bg-slate-100 flex flex-col p-4 gap-4`}>
+              setting-bar fixed top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4`}>
             <div className="flex justify-between my-1 items-center">
                 <h2 className="text-md text-zinc-700">Live Customizer</h2>
           <button 
