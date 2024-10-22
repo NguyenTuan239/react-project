@@ -8,7 +8,7 @@ const PricingPlan = () => {
     <main className="w-full h-auto bg-stone-950 text-slate-200 font-light">
 
       <div className="relative w-full h-72 md:h-96">
-        <img src="../image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
+        <img src="/react-project/image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
         <div className="term-of-use-hl">
           <h2 className="text-3xl font-medium mb-4 flex justify-center">Privacy and Policy</h2>
           <p className="text-xl"><Link href="/otthome" className="netflix font-medium">Home</Link>&nbsp;/&nbsp;<span className="netflix">Privacy and Policy</span></p>

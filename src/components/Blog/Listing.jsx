@@ -9,7 +9,7 @@ const Listing = () => {
     <main className="w-full bg-stone-950 text-slate-200 h-auto font-light">
 
       <div className="relative w-full h-72 md:h-96">
-        <img src="../image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
+        <img src="/react-project/image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
         <div className="term-of-use-hl">
           <h2 className="text-3xl font-medium mb-4 flex justify-center">Blog Listing</h2>
           <p className="text-xl"><Link to="/otthome" className="netflix font-medium">Home</Link>&nbsp;/&nbsp;<span className="netflix">Blog Listing</span></p>
@@ -20,7 +20,7 @@ const Listing = () => {
 
          <div className="w-full lg:w-2/3">
             <div className="w-full mb-5">
-                <img src="../image/blog/blog3.webp" alt="" className="w-full h-auto"/>
+                <img src="/react-project/image/blog/blog3.webp" alt="" className="w-full h-auto"/>
                 <div className="my-5">
                     <span className="bg-image-nothover relative p-2"><FontAwesomeIcon icon={faUser} className='pr-2'/>JENNY <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
                     <span className="bg-image-nothover relative p-2 ml-5"><FontAwesomeIcon icon={faCalendarDays} className='pr-2'/>DECEMBER 30, 2024 <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
@@ -33,7 +33,7 @@ const Listing = () => {
                 <div className="w-full h-0.5 error-page-line-color my-7"></div>
             </div>
             <div className="w-full mb-5">
-                <img src="../image/blog/blog2.webp" alt="" className="w-full h-auto"/>
+                <img src="/react-project/image/blog/blog2.webp" alt="" className="w-full h-auto"/>
                 <div className="my-5">
                     <span className="bg-image-nothover relative p-2"><FontAwesomeIcon icon={faUser} className='pr-2'/>Goldenmace <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
                     <span className="bg-image-nothover relative p-2 ml-5"><FontAwesomeIcon icon={faCalendarDays} className='pr-2'/>DECEMBER 30, 2024 <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
@@ -46,7 +46,7 @@ const Listing = () => {
                 <div className="w-full h-0.5 error-page-line-color my-7"></div>
             </div>
             <div className="w-full mb-5">
-                <img src="../image/blog/blog1.webp" alt="" className="w-full h-auto"/>
+                <img src="/react-project/image/blog/blog1.webp" alt="" className="w-full h-auto"/>
                 <div className="my-5">
                     <span className="bg-image-nothover relative p-2"><FontAwesomeIcon icon={faUser} className='pr-2'/>Goldenmace <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
                     <span className="bg-image-nothover relative p-2 ml-5"><FontAwesomeIcon icon={faCalendarDays} className='pr-2'/>DECEMBER 30, 2024 <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
@@ -59,7 +59,7 @@ const Listing = () => {
                 <div className="w-full h-0.5 error-page-line-color my-7"></div>
             </div>
             <div className="w-full mb-5">
-                <img src="../image/blog/blog4.webp" alt="" className="w-full h-auto"/>
+                <img src="/react-project/image/blog/blog4.webp" alt="" className="w-full h-auto"/>
                 <div className="my-5">
                     <span className="bg-image-nothover relative p-2"><FontAwesomeIcon icon={faUser} className='pr-2'/>Goldenmace <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
                     <span className="bg-image-nothover relative p-2 ml-5"><FontAwesomeIcon icon={faCalendarDays} className='pr-2'/>DECEMBER 30, 2024 <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
@@ -72,7 +72,7 @@ const Listing = () => {
                 <div className="w-full h-0.5 error-page-line-color my-7"></div>
             </div>
             <div className="w-full mb-5">
-                <img src="../image/blog/blog5.webp" alt="" className="w-full h-auto"/>
+                <img src="/react-project/image/blog/blog5.webp" alt="" className="w-full h-auto"/>
                 <div className="my-5">
                     <span className="bg-image-nothover relative p-2"><FontAwesomeIcon icon={faUser} className='pr-2'/>Goldenmace <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
                     <span className="bg-image-nothover relative p-2 ml-5"><FontAwesomeIcon icon={faCalendarDays} className='pr-2'/>DECEMBER 30, 2024 <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
@@ -85,7 +85,7 @@ const Listing = () => {
                 <div className="w-full h-0.5 error-page-line-color my-7"></div>
             </div>
             <div className="w-full mb-5">
-                <img src="../image/blog/blog6.webp" alt="" className="w-full h-auto"/>
+                <img src="/react-project/image/blog/blog6.webp" alt="" className="w-full h-auto"/>
                 <div className="my-5">
                     <span className="bg-image-nothover relative p-2"><FontAwesomeIcon icon={faUser} className='pr-2'/>Goldenmace <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
                     <span className="bg-image-nothover relative p-2 ml-5"><FontAwesomeIcon icon={faCalendarDays} className='pr-2'/>DECEMBER 30, 2024 <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
@@ -98,7 +98,7 @@ const Listing = () => {
                 <div className="w-full h-0.5 error-page-line-color my-7"></div>
             </div>
             <div className="w-full mb-5">
-                <img src="../image/blog/blog7.webp" alt="" className="w-full h-auto"/>
+                <img src="/react-project/image/blog/blog7.webp" alt="" className="w-full h-auto"/>
                 <div className="my-5">
                     <span className="bg-image-nothover relative p-2"><FontAwesomeIcon icon={faUser} className='pr-2'/>Goldenmace <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
                     <span className="bg-image-nothover relative p-2 ml-5"><FontAwesomeIcon icon={faCalendarDays} className='pr-2'/>DECEMBER 30, 2024 <span className="absolute left-0 top-0 w-0.5 h-full netflix-bg"></span></span>
@@ -119,21 +119,21 @@ const Listing = () => {
             <div className="p-6 bg-slate-900 rounded-md my-6">
                 <p className="text-white text-2xl font-medium">Recent Post</p>
                 <div className="flex items-center my-7">
-                    <a href=""><img src="../image/blog/01.webp" alt="" className="w-20 h-auto"/></a>
+                    <a href=""><img src="/react-project/image/blog/01.webp" alt="" className="w-20 h-auto"/></a>
                     <div className="pl-5">
                         <p className="text-lg font-medium">The Most Anticipated Movies</p>
                         <p className="mt-2"><FontAwesomeIcon icon={faCalendarDays} size='sm' className='pr-1 netflix'/>September 23, 2024</p>
                     </div>
                 </div>
                 <div className="flex items-center my-7">
-                    <a href=""><img src="../image/blog/blog2.webp" alt="" className="w-20 h-auto"/></a>
+                    <a href=""><img src="/react-project/image/blog/blog2.webp" alt="" className="w-20 h-auto"/></a>
                     <div className="pl-5">
                         <p className="text-lg font-medium">Amy Adams Always Dreamed</p>
                         <p className="mt-2"><FontAwesomeIcon icon={faCalendarDays} size='sm' className='pr-1 netflix'/>September 23, 2024</p>
                     </div>
                 </div>
                 <div className="flex items-center my-7">
-                    <a href=""><img src="../image/blog/blog3.webp" alt="" className="w-24 h-auto"/></a>
+                    <a href=""><img src="/react-project/image/blog/blog3.webp" alt="" className="w-24 h-auto"/></a>
                     <div className="pl-5">
                         <p className="text-lg lg:text-sm 2xl:text-lg font-medium">WandaVision Will Reveal Scarlet Witch's Untapped Powers</p>
                         <p className="mt-2"><FontAwesomeIcon icon={faCalendarDays} size='sm' className='pr-1 netflix'/>September 23, 2024</p>
@@ -202,7 +202,7 @@ const Listing = () => {
               </span>
             </div>
             <div className="p-6 bg-slate-900 rounded-md my-6 flex justify-center items-center">
-                <a href=""><img src="../image/blog/01.webp" alt="" className="h-80 w-auto"/></a>
+                <a href=""><img src="/react-project/image/blog/01.webp" alt="" className="h-80 w-auto"/></a>
             </div>
          </div>
        </section>

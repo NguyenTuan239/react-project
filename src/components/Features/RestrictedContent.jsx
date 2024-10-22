@@ -90,7 +90,7 @@ const RestrictedContent = () => {
             </li>
             <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><Link to="#"><FontAwesomeIcon icon={faHeart} /></Link></li>
             <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><Link to="#"><FontAwesomeIcon icon={faPlus} /></Link></li>
-            <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><span><a href="/image/video/sample-video.mp4" download><FontAwesomeIcon icon={faDownload} /></a></span></li>
+            <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><span><a href="/react-project/image/video/sample-video.mp4" download><FontAwesomeIcon icon={faDownload} /></a></span></li>
           </ul>
             <Select
               options={options}
@@ -115,7 +115,7 @@ const RestrictedContent = () => {
       <div className="mt-8 w-full h-auto md:w-4/12 md:max-w-96 lg:mr-16 xl:mr-28 2xl:mr-40">
         <Link data-fslightbox="html5-video" to="https://www.youtube.com/watch?v=QCGq1epI9pQ"
           className="relative">
-          <div className="trailer-img"><img src="/image/genre/01.webp"
+          <div className="trailer-img"><img src="/react-project/image/genre/01.webp"
             className="" alt="" loading="lazy" /></div>
           <span className="trailer-link">
             <FontAwesomeIcon icon={faPlay} className='text-white'/>
@@ -332,25 +332,25 @@ const RestrictedContent = () => {
       <OnlyOnStreamit
         title='Upcoming'
         imgLink={[
-          '/image/movie/upcoming/01.webp',
-          '/image/movie/upcoming/02.webp',
-          '/image/movie/upcoming/03.webp',
-          '/image/movie/upcoming/04.webp',
-          '/image/movie/upcoming/05.webp',
-          '/image/movie/upcoming/06.webp',
-          '/image/movie/upcoming/07.webp',
+          '/react-project/image/movie/upcoming/01.webp',
+          '/react-project/image/movie/upcoming/02.webp',
+          '/react-project/image/movie/upcoming/03.webp',
+          '/react-project/image/movie/upcoming/04.webp',
+          '/react-project/image/movie/upcoming/05.webp',
+          '/react-project/image/movie/upcoming/06.webp',
+          '/react-project/image/movie/upcoming/07.webp',
         ]}
       />
       <OnlyOnStreamit
         title='Top Pick'
         imgLink={[
-          '/image/movie/top-picks/07.webp',
-          '/image/movie/top-picks/06.webp',
-          '/image/movie/top-picks/05.webp',
-          '/image/movie/top-picks/04.webp',
-          '/image/movie/top-picks/03.webp',
-          '/image/movie/top-picks/02.webp',
-          '/image/movie/top-picks/01.webp',
+          '/react-project/image/movie/top-picks/07.webp',
+          '/react-project/image/movie/top-picks/06.webp',
+          '/react-project/image/movie/top-picks/05.webp',
+          '/react-project/image/movie/top-picks/04.webp',
+          '/react-project/image/movie/top-picks/03.webp',
+          '/react-project/image/movie/top-picks/02.webp',
+          '/react-project/image/movie/top-picks/01.webp',
         ]}
       />
     </main>

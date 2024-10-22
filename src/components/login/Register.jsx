@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const register = () => {
   return (
-    <main className="login-bg fixed min-h-screen w-full bg-[url('/image/pages/01.webp')] bg-cover text-slate-200">
+    <main className="login-bg fixed min-h-screen w-full bg-[url('/react-project/image/pages/01.webp')] bg-cover text-slate-200">
       <section className="absolute w-full h-full flex justify-center items-center z-10">
         <form className="register-b register-bar">
             <h1 className="mx-auto mt-12 mb-10 text-xl font-medium">Creat Your Account</h1>

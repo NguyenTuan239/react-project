@@ -5,7 +5,7 @@ import { faCaretRight, faQuestion, faHeadphones, faTag, faCheck } from '@fortawe
 
 const ErrorPage2 = () => {
   return (
-    <section class="relative w-full min-h-screen text-slate-200 bg-[url('/image/pages/404-two.webp')] flex flex-col justify-center items-center">
+    <section class="relative w-full min-h-screen text-slate-200 bg-[url('/react-project/image/pages/404-two.webp')] flex flex-col justify-center items-center">
         <div class="flex flex-col items-center">
             <div class="relative text-nowrap w-full pl-5">
                 <span class="error-page-number-41"><span>4</span><span class="error-page-number-410">4</span></span>

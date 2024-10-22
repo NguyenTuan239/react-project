@@ -24,7 +24,7 @@ function Loader() {
   return (
     <div className="z-50 fixed w-full h-full bg-zinc-950 flex justify-center items-center">
       <img
-        src="/image/loader.gif"
+        src="/react-project/image/loader.gif"
         alt="Loading"
         className="h-60 w-auto"
       />

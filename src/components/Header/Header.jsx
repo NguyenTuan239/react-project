@@ -114,28 +114,28 @@ const Header = () => {
       <div className='bg-stone-950/90 w-full h-14 md:h-16 absolute top-0'></div>
       {/* Web Navigation */}
       <section className="flex justify-center ">
-        <Link to="otthome"><img src="/image/logo.webp" alt="logo" className="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"/></Link>
+        <Link to="otthome"><img src="/react-project/image/logo.webp" alt="logo" className="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"/></Link>
         <div className="web-nav hidden relative lg:flex justify-center items-center gap-10 mt-0 ml-20 text-sm xl:gap-14">
           <p className="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Home&nbsp;&nbsp;<FontAwesomeIcon icon={faCaretDown} /></p>
           <div className="home-hover hidden absolute top-16 -left-28 -right-14 lg:-left-36 lg:-right-32 h-auto w-auto bg-stone-900">
             <ul className="my-2 mx-4 flex justify-evenly">
               <NavLink to="otthome" className={({ isActive }) => `${isActive ? "netflix" : ""} flex flex-col justify-center items-center gap-2 hover-red`}>
-                <img className="w-28 lg:w-36 h-auto" src="/image/mega-menu/new-home.webp" alt="new home menu" /><span>OTT Home</span>
+                <img className="w-28 lg:w-36 h-auto" src="/react-project/image/mega-menu/new-home.webp" alt="new home menu" /><span>OTT Home</span>
               </NavLink>
               <NavLink to="home" className={({ isActive }) => `${isActive ? "netflix" : ""} flex flex-col justify-center items-center gap-2 hover-red`}>
-                <img className="w-28 lg:w-36 h-auto" src="/image/mega-menu/home.webp" alt="home menu" /><span>Home</span>
+                <img className="w-28 lg:w-36 h-auto" src="/react-project/image/mega-menu/home.webp" alt="home menu" /><span>Home</span>
               </NavLink>
               <NavLink to="movie" className={({ isActive }) => `${isActive ? "netflix" : ""} flex flex-col justify-center items-center gap-2 hover-red`}>
-                <img className="w-28 lg:w-36 h-auto" src="/image/mega-menu/movie.webp" alt="movie" /><span>Movie</span>
+                <img className="w-28 lg:w-36 h-auto" src="/react-project/image/mega-menu/movie.webp" alt="movie" /><span>Movie</span>
               </NavLink>
               <NavLink to="tvshow" className={({ isActive }) => `${isActive ? "netflix" : ""} flex flex-col justify-center items-center gap-2 hover-red`}>
-                <img className="w-28 lg:w-36 h-auto" src="/image/mega-menu/tv-show.webp" alt="Tv Show" /><span>Tv Show</span>
+                <img className="w-28 lg:w-36 h-auto" src="/react-project/image/mega-menu/tv-show.webp" alt="Tv Show" /><span>Tv Show</span>
               </NavLink>
               <NavLink to="video" className={({ isActive }) => `${isActive ? "netflix" : ""} flex flex-col justify-center items-center gap-2 hover-red`}>
-                <img className="w-28 lg:w-36 h-auto" src="/image/mega-menu/video.webp" alt="Video" /><span>Video</span>
+                <img className="w-28 lg:w-36 h-auto" src="/react-project/image/mega-menu/video.webp" alt="Video" /><span>Video</span>
               </NavLink>
               <NavLink to="merchandisestore" className={({ isActive }) => `${isActive ? "netflix" : ""} flex flex-col justify-center items-center gap-2 hover-red`}>
-                <img className="w-28 lg:w-36 h-auto" src="/image/mega-menu/shop-home.webp" alt="Merchadise Store" /><span className="w-4/6 pt-2 -mb-2">Merchandise</span><span>Store</span>
+                <img className="w-28 lg:w-36 h-auto" src="/react-project/image/mega-menu/shop-home.webp" alt="Merchadise Store" /><span className="w-4/6 pt-2 -mb-2">Merchandise</span><span>Store</span>
               </NavLink>
             </ul>
           </div>
@@ -499,7 +499,7 @@ const Header = () => {
         >
           <p className="p-4 pl-12 ">
             <span className="absolute top-3 left-2 w-9 h-9">
-              <img src="/image/profile.png" alt="Profile" />
+              <img src="/react-project/image/profile.png" alt="Profile" />
             </span>
             Tuan Nguyen
           </p>

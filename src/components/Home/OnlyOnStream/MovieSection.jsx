@@ -66,7 +66,7 @@ function MovieSection({
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 30mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Romance</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">john nathan</Link></span>
@@ -99,7 +99,7 @@ function MovieSection({
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 30mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Romance</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">john nathan</Link></span>
@@ -132,7 +132,7 @@ function MovieSection({
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 30mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Romance</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">john nathan</Link></span>
@@ -164,8 +164,8 @@ function MovieSection({
             height="264"
             data-setup="{}"
           >
-            <source src="../image/video/trailer.mp4" type="video/mp4" />
-            <source src="../image/video/trailer.webm" type="video/webm" />
+            <source src="/react-project/image/video/trailer.mp4" type="video/mp4" />
+            <source src="/react-project/image/video/trailer.webm" type="video/webm" />
             <p className="vjs-no-js">
               To view this video please enable JavaScript, and consider upgrading to a
               web browser that

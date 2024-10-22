@@ -18,17 +18,17 @@ import VerticalSlide from './OnlyOnStream/VerticalSlide';
 
 export const OTThome = () => {
   const castData = [
-    { id: 1, src: "/image/cast/01.webp", name: "John Abraham", role: "Actress" },
-    { id: 2, src: "/image/cast/02.webp", name: "Leena Burton", role: "Actor" },
-    { id: 3, src: "/image/cast/03.webp", name: "Lorina Williams", role: "Actor" },
-    { id: 4, src: "/image/cast/04.webp", name: "Davina Decorous", role: "Actress" },
-    { id: 5, src: "/image/cast/05.webp", name: "Thomas Bailey", role: "Productor" },
-    { id: 6, src: "/image/cast/06.webp", name: "Kelly Reilly", role: "Director" },
-    { id: 7, src: "/image/cast/07.webp", name: "Smith Jonas", role: "Cameraman" },
-    { id: 8, src: "/image/cast/08.webp", name: "Angel Luis", role: "Actor" },
-    { id: 9, src: "/image/cast/09.webp", name: "Ammy Sedaris", role: "Productor" },
-    { id: 10, src: "/image/cast/10.webp", name: "John Reilly", role: "Actor" },
-    { id: 11, src: "/image/cast/11.webp", name: "Thomas Bailey", role: "Actress" },
+    { id: 1, src: "/react-project/image/cast/01.webp", name: "John Abraham", role: "Actress" },
+    { id: 2, src: "/react-project/image/cast/02.webp", name: "Leena Burton", role: "Actor" },
+    { id: 3, src: "/react-project/image/cast/03.webp", name: "Lorina Williams", role: "Actor" },
+    { id: 4, src: "/react-project/image/cast/04.webp", name: "Davina Decorous", role: "Actress" },
+    { id: 5, src: "/react-project/image/cast/05.webp", name: "Thomas Bailey", role: "Productor" },
+    { id: 6, src: "/react-project/image/cast/06.webp", name: "Kelly Reilly", role: "Director" },
+    { id: 7, src: "/react-project/image/cast/07.webp", name: "Smith Jonas", role: "Cameraman" },
+    { id: 8, src: "/react-project/image/cast/08.webp", name: "Angel Luis", role: "Actor" },
+    { id: 9, src: "/react-project/image/cast/09.webp", name: "Ammy Sedaris", role: "Productor" },
+    { id: 10, src: "/react-project/image/cast/10.webp", name: "John Reilly", role: "Actor" },
+    { id: 11, src: "/react-project/image/cast/11.webp", name: "Thomas Bailey", role: "Actress" },
   ];
 
   const [activeSeason, setActiveSeason] = useState(1);
@@ -74,7 +74,7 @@ export const OTThome = () => {
           <SwiperSlide>
               <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
-                  <img src="/image/movie/ott1.webp" alt="Slide 1" className="otthome-sec1-img" />
+                  <img src="/react-project/image/movie/ott1.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
@@ -88,7 +88,7 @@ export const OTThome = () => {
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 6mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres:<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Drama</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Jeffrey Silver</Link></span>
@@ -102,7 +102,7 @@ export const OTThome = () => {
           <SwiperSlide>
               <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
-                  <img src="/image/movie/ott2.webp" alt="Slide 1" className="otthome-sec1-img" />
+                  <img src="/react-project/image/movie/ott2.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
@@ -115,7 +115,7 @@ export const OTThome = () => {
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 26mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres:<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Sci-Fi</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">James Chinlund</Link></span>
@@ -129,7 +129,7 @@ export const OTThome = () => {
           <SwiperSlide>
               <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
-                  <img src="/image/movie/ott3.webp" alt="Slide 1" className="otthome-sec1-img" />
+                  <img src="/react-project/image/movie/ott3.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
@@ -142,7 +142,7 @@ export const OTThome = () => {
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 6mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres:<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Drama</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Jeffrey Silver</Link></span>
@@ -171,7 +171,7 @@ export const OTThome = () => {
             className="mySwiper01 h-full"
           >
             <SwiperSlide>
-            <div className="item2 bg-[url('/image/movie/ott1.webp')]">
+            <div className="item2 bg-[url('/react-project/image/movie/ott1.webp')]">
                 <div className="poster-card-des">
                   <p className="font-medium text-white">The Hunter</p>
                   <p className="font-light text-sm text-white">2hr 6 minute</p>
@@ -179,7 +179,7 @@ export const OTThome = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="item2 bg-[url('/image/movie/ott2.webp')]">
+            <div className="item2 bg-[url('/react-project/image/movie/ott2.webp')]">
                 <div className="poster-card-des">
                   <p className="font-medium text-white">The Mandalorian</p>
                   <p className="font-light text-sm text-white">2hr 14 minute</p>
@@ -187,7 +187,7 @@ export const OTThome = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="item2 bg-[url('/image/movie/ott3.webp')]">
+            <div className="item2 bg-[url('/react-project/image/movie/ott3.webp')]">
                 <div className="poster-card-des">
                   <p className="font-medium text-white">Better call saul</p>
                   <p className="font-light text-sm text-white">2hr 55 minute</p>
@@ -203,12 +203,12 @@ export const OTThome = () => {
       <ContinueWatching
         title='Continue Watching'
         imgLink={[
-          '/image/continue-watch/01.webp',
-          '/image/continue-watch/02.webp',
-          '/image/continue-watch/03.webp',
-          '/image/continue-watch/04.webp',
-          '/image/continue-watch/05.webp',
-          '/image/continue-watch/06.webp',
+          '/react-project/image/continue-watch/01.webp',
+          '/react-project/image/continue-watch/02.webp',
+          '/react-project/image/continue-watch/03.webp',
+          '/react-project/image/continue-watch/04.webp',
+          '/react-project/image/continue-watch/05.webp',
+          '/react-project/image/continue-watch/06.webp',
         ]}
         />
       {/* section 3 Top ten Movie To Watch */}
@@ -238,61 +238,61 @@ export const OTThome = () => {
         >
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/01.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/01.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">1</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/02.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/02.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">2</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/03.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/03.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">3</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/04.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/04.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">4</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/05.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/05.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">5</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/06.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/06.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">6</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/07.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/07.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">7</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/08.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/08.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">8</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/09.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/09.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">9</div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="topten-item">
-              <Link to="/moviedetail"><img src="/image/tv-show/10.webp" alt="" className="topten-image"/></Link>
+              <Link to="/moviedetail"><img src="/react-project/image/tv-show/10.webp" alt="" className="topten-image"/></Link>
               <div className="topten-number movie-poster-hl text-7xl lg:text-9xl font-extrabold">10</div>
             </div>
           </SwiperSlide>
@@ -305,23 +305,23 @@ export const OTThome = () => {
       {/* section 4 Only On Streamit */}
       <OnlyOnStreamit
         title='Only On Streamit'
-        imgLink={['/image/movie/related/05.webp',
-          '/image/movie/related/04.webp',
-          '/image/movie/related/03.webp',
-          '/image/movie/related/02.webp',
-          '/image/movie/related/01.webp',
-          '/image/movie/related/06.webp',
-          '/image/movie/related/07.webp',
+        imgLink={['/react-project/image/movie/related/05.webp',
+          '/react-project/image/movie/related/04.webp',
+          '/react-project/image/movie/related/03.webp',
+          '/react-project/image/movie/related/02.webp',
+          '/react-project/image/movie/related/01.webp',
+          '/react-project/image/movie/related/06.webp',
+          '/react-project/image/movie/related/07.webp',
         ]}
         />
       {/* section 5  */}
       <VerticalSlide
         imgLink={[
-          '/image/top-10/01.webp',
-          '/image/top-10/02.webp',
-          '/image/top-10/03.webp',
-          '/image/top-10/04.webp',
-          '/image/top-10/05.webp',
+          '/react-project/image/top-10/01.webp',
+          '/react-project/image/top-10/02.webp',
+          '/react-project/image/top-10/03.webp',
+          '/react-project/image/top-10/04.webp',
+          '/react-project/image/top-10/05.webp',
         ]}
         />
       {/* section 6 Your Favourite Personnality */}
@@ -358,13 +358,13 @@ export const OTThome = () => {
       <OnlyOnStreamit
         title='Popular Movies'
         imgLink={[
-          '/image/movie/popular/01.webp',
-          '/image/movie/popular/02.webp',
-          '/image/movie/popular/03.webp',
-          '/image/movie/popular/04.webp',
-          '/image/movie/popular/05.webp',
-          '/image/movie/popular/06.webp',
-          '/image/movie/popular/07.webp',
+          '/react-project/image/movie/popular/01.webp',
+          '/react-project/image/movie/popular/02.webp',
+          '/react-project/image/movie/popular/03.webp',
+          '/react-project/image/movie/popular/04.webp',
+          '/react-project/image/movie/popular/05.webp',
+          '/react-project/image/movie/popular/06.webp',
+          '/react-project/image/movie/popular/07.webp',
         ]}
       />
       {/* section 8 */}
@@ -382,9 +382,9 @@ export const OTThome = () => {
           className=""
         >
           <SwiperSlide>
-            <div className="sec5-bg bg-[url('/image/tab-slider/01.webp')]">
+            <div className="sec5-bg bg-[url('/react-project/image/tab-slider/01.webp')]">
               <div className="sec8-Poster text-gray-300 p-3 z-10">
-                <p className="font-medium text-white mr-4 text-nowrap flex justify-start items-center"><img src="/image/movie/trending-label.webp" style={{width: '5rem', height: '5rem'}}/><span className="netflix ml-4">#4</span>&nbsp; in Series Today</p>
+                <p className="font-medium text-white mr-4 text-nowrap flex justify-start items-center"><img src="/react-project/image/movie/trending-label.webp" style={{width: '5rem', height: '5rem'}}/><span className="netflix ml-4">#4</span>&nbsp; in Series Today</p>
                 <h2 className="my-4 text-3xl font-medium movie-poster-hl">The Hunter</h2>
                 <p className="sec5-content mt-1 text-sm">
                   After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
@@ -416,28 +416,28 @@ export const OTThome = () => {
                 <hr className="my-3 w-full border-slate-800"/>
                 <ul className={`${activeSeason === 1 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/01.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/01.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - Fire And Blood</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/02.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/02.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - The Pointy End</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/03.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/03.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - You Win Or You Die</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/04.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/04.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - The Black Queen</p>
                       <p className="text-sm">45 minute</p>
@@ -446,28 +446,28 @@ export const OTThome = () => {
                 </ul>
                 <ul className={`${activeSeason === 2 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/05.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/05.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - Valar Morghulis</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/06.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/06.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - Black Water</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/07.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/07.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - The Ghost Of Harrenhal</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/08.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/08.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - Garden Of Bones</p>
                       <p className="text-sm">45 minute</p>
@@ -476,28 +476,28 @@ export const OTThome = () => {
                 </ul>
                 <ul className={`${activeSeason === 3 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/09.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/09.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - Mhysa</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/10.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/10.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - Secon Sons</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/11.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/11.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - The Climb</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/12.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/12.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - Kissed by Fire</p>
                       <p className="text-sm">45 minute</p>
@@ -508,9 +508,9 @@ export const OTThome = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className="sec5-bg bg-[url('/image/tab-slider/02.webp')]">
+          <div className="sec5-bg bg-[url('/react-project/image/tab-slider/02.webp')]">
               <div className="sec8-Poster text-gray-300 p-3 z-10">
-                <p className="font-medium text-white mr-4 text-nowrap flex justify-start items-center"><img src="/image/movie/trending-label.webp" style={{width: '5rem', height: '5rem'}}/><span className="netflix ml-4">#4</span>&nbsp; in Series Today</p>
+                <p className="font-medium text-white mr-4 text-nowrap flex justify-start items-center"><img src="/react-project/image/movie/trending-label.webp" style={{width: '5rem', height: '5rem'}}/><span className="netflix ml-4">#4</span>&nbsp; in Series Today</p>
                 <h2 className="my-4 text-3xl font-medium movie-poster-hl">Pirates Of Dayones</h2>
                 <p className="sec5-content mt-1 text-sm">
                   After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
@@ -542,28 +542,28 @@ export const OTThome = () => {
                 <hr className="my-3 w-full border-slate-800"/>
                 <ul className={`${activeSeason === 1 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/13.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/13.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - The Curse</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/14.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/14.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - Dead Man Chest</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/15.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/15.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - At World</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/16.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/16.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - On Strange</p>
                       <p className="text-sm">45 minute</p>
@@ -572,28 +572,28 @@ export const OTThome = () => {
                 </ul>
                 <ul className={`${activeSeason === 2 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/17.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/17.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - Valar Morghulis</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/18.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/18.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - Black Water</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/19.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/19.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - The Ghost Of Harrenhal</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/20.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/20.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - Garden Of Bones</p>
                       <p className="text-sm">45 minute</p>
@@ -602,28 +602,28 @@ export const OTThome = () => {
                 </ul>
                 <ul className={`${activeSeason === 3 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/21.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/21.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - Tell No Table</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/22.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/22.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - The Priate</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/23.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/23.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - Eat At Bara</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/24.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/24.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - The Chef</p>
                       <p className="text-sm">45 minute</p>
@@ -634,9 +634,9 @@ export const OTThome = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className="sec5-bg bg-[url('/image/tab-slider/03.webp')]">
+          <div className="sec5-bg bg-[url('/react-project/image/tab-slider/03.webp')]">
               <div className="sec8-Poster text-gray-300 p-3 z-10">
-                <p className="font-medium text-white mr-4 text-nowrap flex justify-start items-center"><img src="/image/movie/trending-label.webp" style={{width: '5rem', height: '5rem'}}/><span className="netflix ml-4">#4</span>&nbsp; in Series Today</p>
+                <p className="font-medium text-white mr-4 text-nowrap flex justify-start items-center"><img src="/react-project/image/movie/trending-label.webp" style={{width: '5rem', height: '5rem'}}/><span className="netflix ml-4">#4</span>&nbsp; in Series Today</p>
                 <h2 className="my-4 text-3xl font-medium movie-poster-hl">Peaky Blinders</h2>
                 <p className="sec5-content mt-1 text-sm">
                   After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
@@ -668,28 +668,28 @@ export const OTThome = () => {
                 <hr className="my-3 w-full border-slate-800"/>
                 <ul className={`${activeSeason === 1 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/25.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/25.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - The Curse</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/26.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/26.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - Dead Man Chest</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/27.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/27.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - At World</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/28.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/28.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - On Strange</p>
                       <p className="text-sm">45 minute</p>
@@ -698,28 +698,28 @@ export const OTThome = () => {
                 </ul>
                 <ul className={`${activeSeason === 2 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/29.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/29.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - Valar Morghulis</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/30.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/30.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - Black Water</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/31.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/31.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - The Ghost Of Harrenhal</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/32.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/32.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - Garden Of Bones</p>
                       <p className="text-sm">45 minute</p>
@@ -728,28 +728,28 @@ export const OTThome = () => {
                 </ul>
                 <ul className={`${activeSeason === 3 ? '' : 'hidden'} otthome-sec8-content ml-3`}>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/33.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/33.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E1</span> - Tell No Table</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/34.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/34.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E2</span> - The Priate</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/35.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/35.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E3</span> - Eat At Bara</p>
                       <p className="text-sm">45 minute</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-6 mb-4">
-                    <div className="sec8-tvshow"><img src="/image/tv-show/31.webp" alt="" className="sec8-tvshow-img"/></div>
+                    <div className="sec8-tvshow"><img src="/react-project/image/tv-show/31.webp" alt="" className="sec8-tvshow-img"/></div>
                     <div>
                       <p className="text-base font-normal"><span className="netflix">E4</span> - The Chef</p>
                       <p className="text-sm">45 minute</p>
@@ -782,7 +782,7 @@ export const OTThome = () => {
         >
           <SwiperSlide>
             <div className="only-onstream-item w-full">
-              <div className="sec9-image bg-[url('/image/genre/01.webp')]">
+              <div className="sec9-image bg-[url('/react-project/image/genre/01.webp')]">
                 <p className="font-normal text-xl">Action</p>
                 <div className="sec9-underline netflix-bg"></div>
               </div>
@@ -790,7 +790,7 @@ export const OTThome = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="only-onstream-item w-full">
-              <div className="sec9-image bg-[url('/image/genre/02.webp')]">
+              <div className="sec9-image bg-[url('/react-project/image/genre/02.webp')]">
                 <p className="font-normal text-xl">Adventure</p>
                 <div className="sec9-underline netflix-bg"></div>
               </div>
@@ -798,7 +798,7 @@ export const OTThome = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="only-onstream-item w-full">
-              <div className="sec9-image bg-[url('/image/genre/03.webp')]">
+              <div className="sec9-image bg-[url('/react-project/image/genre/03.webp')]">
                 <p className="font-normal text-xl">Animation</p>
                 <div className="sec9-underline netflix-bg"></div>
               </div>
@@ -806,7 +806,7 @@ export const OTThome = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="only-onstream-item w-full">
-              <div className="sec9-image bg-[url('/image/genre/04.webp')]">
+              <div className="sec9-image bg-[url('/react-project/image/genre/04.webp')]">
                 <p className="font-normal text-xl">Crime</p>
                 <div className="sec9-underline netflix-bg"></div>
               </div>
@@ -814,7 +814,7 @@ export const OTThome = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="only-onstream-item w-full">
-              <div className="sec9-image bg-[url('/image/genre/05.webp')]">
+              <div className="sec9-image bg-[url('/react-project/image/genre/05.webp')]">
                 <p className="font-normal text-xl">Horror</p>
                 <div className="sec9-underline netflix-bg"></div>
               </div>
@@ -822,7 +822,7 @@ export const OTThome = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="only-onstream-item w-full">
-              <div className="sec9-image bg-[url('/image/genre/06.webp')]">
+              <div className="sec9-image bg-[url('/react-project/image/genre/06.webp')]">
                 <p className="font-normal text-xl">Mystery</p>
                 <div className="sec9-underline netflix-bg"></div>
               </div>
@@ -830,7 +830,7 @@ export const OTThome = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="only-onstream-item w-full">
-              <div className="sec9-image bg-[url('/image/genre/07.webp')]">
+              <div className="sec9-image bg-[url('/react-project/image/genre/07.webp')]">
                 <p className="font-normal text-xl">Romance</p>
                 <div className="sec9-underline netflix-bg"></div>
               </div>
@@ -846,13 +846,13 @@ export const OTThome = () => {
       <OnlyOnStreamit
         title='Recommended For You'
         imgLink={[
-          '/image/movie/recommended/01.webp',
-          '/image/movie/recommended/02.webp',
-          '/image/movie/recommended/03.webp',
-          '/image/movie/recommended/04.webp',
-          '/image/movie/recommended/05.webp',
-          '/image/movie/recommended/06.webp',
-          '/image/movie/recommended/07.webp',
+          '/react-project/image/movie/recommended/01.webp',
+          '/react-project/image/movie/recommended/02.webp',
+          '/react-project/image/movie/recommended/03.webp',
+          '/react-project/image/movie/recommended/04.webp',
+          '/react-project/image/movie/recommended/05.webp',
+          '/react-project/image/movie/recommended/06.webp',
+          '/react-project/image/movie/recommended/07.webp',
         ]}
       />
     </main>

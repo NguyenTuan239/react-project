@@ -60,7 +60,7 @@ const Home = () => {
           <SwiperSlide>
               <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
-                  <img src="/image/movie/upcoming/banner1.webp" alt="Slide 1" className="otthome-sec1-img" />
+                  <img src="/react-project/image/movie/upcoming/banner1.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
@@ -74,7 +74,7 @@ const Home = () => {
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 30mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Romance</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Action</Link></span>
@@ -93,7 +93,7 @@ const Home = () => {
           <SwiperSlide>
               <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
-                  <img src="/image/movie/upcoming/banner2.webp" alt="Slide 1" className="otthome-sec1-img" />
+                  <img src="/react-project/image/movie/upcoming/banner2.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
@@ -107,7 +107,7 @@ const Home = () => {
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 30mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Romance</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Action</Link></span>
@@ -126,7 +126,7 @@ const Home = () => {
           <SwiperSlide>
               <div className='otthome-sec1-bg '>
                 <div className="otthome-sec1-img-wrapper">
-                  <img src="/image/movie/upcoming/banner3.webp" alt="Slide 1" className="otthome-sec1-img" />
+                  <img src="/react-project/image/movie/upcoming/banner3.webp" alt="Slide 1" className="otthome-sec1-img" />
                 </div>
                 <div className="moviePoster text-gray-300 p-3">
                   <div className="moviePoster-content1 flex items-center font-bold pb-3">
@@ -140,7 +140,7 @@ const Home = () => {
                   </p>
                   <div className="moviePoster-content4 flex items-center mt-4 flex-wrap">
                     <span className="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5</span>
-                    <span><img src="/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
+                    <span><img src="/react-project/image/movie/imdb-logo.svg" alt="" className="h-14 w-auto"/></span>
                     <span className="ml-4 text-nowrap">2hr 30mins</span>
                     <span className="netflix ml-4 text-nowrap">Genres<Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Romance</Link></span>
                     <span className="netflix ml-4 text-nowrap">Starting: <Link className="transition-all duration-500 ease-in-out hover-red text-slate-200">Action</Link></span>
@@ -174,8 +174,8 @@ const Home = () => {
             height="264"
             data-setup="{}"
           >
-            <source src="../image/video/trailer.mp4" type="video/mp4" />
-            <source src="../image/video/trailer.webm" type="video/webm" />
+            <source src="/react-project/image/video/trailer.mp4" type="video/mp4" />
+            <source src="/react-project/image/video/trailer.webm" type="video/webm" />
             <p className="vjs-no-js">
               To view this video please enable JavaScript, and consider upgrading to a
               web browser that
@@ -189,48 +189,48 @@ const Home = () => {
       <ContinueWatching
         title='Only On Streamit'
         imgLink={[
-          '/image/continue-watch/01.webp',
-          '/image/continue-watch/02.webp',
-          '/image/continue-watch/03.webp',
-          '/image/continue-watch/04.webp',
-          '/image/continue-watch/05.webp',
-          '/image/continue-watch/06.webp',
+          '/react-project/image/continue-watch/01.webp',
+          '/react-project/image/continue-watch/02.webp',
+          '/react-project/image/continue-watch/03.webp',
+          '/react-project/image/continue-watch/04.webp',
+          '/react-project/image/continue-watch/05.webp',
+          '/react-project/image/continue-watch/06.webp',
         ]}
       />
       {/* section 3  */}
       <OnlyOnStreamit
         title='Upcomging'
         imgLink={[
-          '/image/movie/upcoming/01.webp',
-          '/image/movie/upcoming/02.webp',
-          '/image/movie/upcoming/03.webp',
-          '/image/movie/upcoming/04.webp',
-          '/image/movie/upcoming/05.webp',
-          '/image/movie/upcoming/06.webp',
-          '/image/movie/upcoming/07.webp',
+          '/react-project/image/movie/upcoming/01.webp',
+          '/react-project/image/movie/upcoming/02.webp',
+          '/react-project/image/movie/upcoming/03.webp',
+          '/react-project/image/movie/upcoming/04.webp',
+          '/react-project/image/movie/upcoming/05.webp',
+          '/react-project/image/movie/upcoming/06.webp',
+          '/react-project/image/movie/upcoming/07.webp',
         ]}
       />
       {/* section 4  */}
       <VerticalSlide
         imgLink={[
-          '/image/top-10/06.webp',
-          '/image/top-10/07.webp',
-          '/image/top-10/08.webp',
-          '/image/top-10/09.webp',
-          '/image/top-10/05.webp',
+          '/react-project/image/top-10/06.webp',
+          '/react-project/image/top-10/07.webp',
+          '/react-project/image/top-10/08.webp',
+          '/react-project/image/top-10/09.webp',
+          '/react-project/image/top-10/05.webp',
         ]}
       />
       {/* section 5  */}
       <OnlyOnStreamit
         title='Recommended For You'
         imgLink={[
-          '/image/movie/recommended/01.webp',
-          '/image/movie/recommended/02.webp',
-          '/image/movie/recommended/03.webp',
-          '/image/movie/recommended/04.webp',
-          '/image/movie/recommended/05.webp',
-          '/image/movie/recommended/06.webp',
-          '/image/movie/recommended/07.webp',
+          '/react-project/image/movie/recommended/01.webp',
+          '/react-project/image/movie/recommended/02.webp',
+          '/react-project/image/movie/recommended/03.webp',
+          '/react-project/image/movie/recommended/04.webp',
+          '/react-project/image/movie/recommended/05.webp',
+          '/react-project/image/movie/recommended/06.webp',
+          '/react-project/image/movie/recommended/07.webp',
         ]}
       />
       {/* section 6  */}
@@ -249,20 +249,20 @@ const Home = () => {
               <Link to="/moviedetail"><div className="sub-but w-40 h-12 text-sm font-bold"><span className="sub-bg netflix-bg rounded-md"></span><span className="sub-but1"></span><span className="sub-but2"></span><span className="sub-but-text">play now<FontAwesomeIcon icon={faCaretRight} size='lg' className='pl-3'/></span></div></Link>
             </div>
           </div>
-          <div className="px-5 pb-24 xl:pt-24 xl:pr-24"><Link to="/moviedetail"><img src="/image/parallax/parallex.webp" alt="" className="homePG-sec7-img"/></Link></div>
+          <div className="px-5 pb-24 xl:pt-24 xl:pr-24"><Link to="/moviedetail"><img src="/react-project/image/parallax/parallex.webp" alt="" className="homePG-sec7-img"/></Link></div>
         </div>
       </section>
       {/* section 7  */}
       <OnlyOnStreamit
         title='Related Movie'
         imgLink={[
-          '/image/movie/related/07.webp',
-          '/image/movie/related/06.webp',
-          '/image/movie/related/05.webp',
-          '/image/movie/related/04.webp',
-          '/image/movie/related/03.webp',
-          '/image/movie/related/02.webp',
-          '/image/movie/related/01.webp',
+          '/react-project/image/movie/related/07.webp',
+          '/react-project/image/movie/related/06.webp',
+          '/react-project/image/movie/related/05.webp',
+          '/react-project/image/movie/related/04.webp',
+          '/react-project/image/movie/related/03.webp',
+          '/react-project/image/movie/related/02.webp',
+          '/react-project/image/movie/related/01.webp',
         ]}
       />
     </main>

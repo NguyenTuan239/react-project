@@ -9,7 +9,7 @@ const CartPage = () => {
     <main className="w-full h-auto bg-stone-950 text-slate-200 font-light">
 
       <div className="relative w-full h-72 md:h-96">
-        <img src="../../image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
+        <img src="/react-project/image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
         <div className="term-of-use-hl">
           <h2 className="text-3xl font-medium mb-4 flex justify-center">Cart</h2>
           <p className="text-xl"><Link to="/otthome" className="netflix font-medium">Home</Link>&nbsp;/&nbsp;<span className="netflix">Cart</span></p>
@@ -55,7 +55,7 @@ const CartPage = () => {
                     <tbody>
                       <tr id="cart-line-1" className="bg-black">
                         <td className="flex gap-3 items-center my-3">
-                          <img src="../../image/shop/product/08.webp" alt="" className="w-20 h-20"/>
+                          <img src="/react-project/image/shop/product/08.webp" alt="" className="w-20 h-20"/>
                           <span>Coffee Cup</span>
                         </td>
                         <td className="text-nowrap">
@@ -74,7 +74,7 @@ const CartPage = () => {
                       </tr>
                       <tr id="cart-line-2" className="bg-black">
                         <td className="flex gap-3 items-center my-3">
-                          <img src="../../image/shop/product/09.webp" alt="" className="w-20 h-20"/>
+                          <img src="/react-project/image/shop/product/09.webp" alt="" className="w-20 h-20"/>
                           <span>Game Center</span>
                         </td>
                         <td className="text-nowrap">
@@ -93,7 +93,7 @@ const CartPage = () => {
                       </tr>
                       <tr id="cart-line-3" className="bg-black">
                         <td className="flex gap-3 items-center my-3">
-                          <img src="../../image/shop/product/06.webp" alt="" className="w-20 h-20"/>
+                          <img src="/react-project/image/shop/product/06.webp" alt="" className="w-20 h-20"/>
                           <span>Carry bag</span>
                         </td>
                         <td className="text-nowrap">

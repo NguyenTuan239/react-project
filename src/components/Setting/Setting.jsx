@@ -88,28 +88,28 @@ const Setting = () => {
             onClick={() => {
               toggletextColor('#ca0606');
               toggleBGColor('#ff00002a');
-              toggleLogoColor('/image/logo.webp');
+              toggleLogoColor('/react-project/image/logo.webp');
             }}
-            className={`${textColor === '#ca0606' ? 'bg-black text-white' : 'text-zinc-700'} theme-buttons border border-black py-1 rounded-sm`} logo-color="/image/logo.webp">Netflix</button>
+            className={`${textColor === '#ca0606' ? 'bg-black text-white' : 'text-zinc-700'} theme-buttons border border-black py-1 rounded-sm`} logo-color="/react-project/image/logo.webp">Netflix</button>
           <button
             onClick={() => {
               toggletextColor('#0303c4');
               toggleBGColor('#0000ff2a');
-              toggleLogoColor('/image/logo-hotstar.webp');
+              toggleLogoColor('/react-project/image/logo-hotstar.webp');
             }}
             className={`${textColor === '#0303c4' ? 'bg-black text-white' : 'text-zinc-700'} theme-buttons border border-black py-1 rounded-sm`} logo-color="logo-hotstar.webp">Hotstar</button>
           <button
             onClick={() => {
               toggletextColor('#05b9b9');
               toggleBGColor('#00ffff2a');
-              toggleLogoColor('/image/logo-prime.webp');
+              toggleLogoColor('/react-project/image/logo-prime.webp');
             }}
             className={`${textColor === '#05b9b9' ? 'bg-black text-white' : 'text-zinc-700'} theme-buttons border border-black py-1 rounded-sm`} logo-color="logo-prime.webp">Prime</button>
           <button
             onClick={() => {
               toggletextColor('#69ad03');
               toggleBGColor('#adff2f2a');
-              toggleLogoColor('/image/logo-hulu.webp');
+              toggleLogoColor('/react-project/image/logo-hulu.webp');
             }}
             className={`${textColor === '#69ad03' ? 'bg-black text-white' : 'text-zinc-700'} theme-buttons border border-black py-1 rounded-sm`} logo-color="logo-hulu.webp">Hulu</button>
             </div>
@@ -123,7 +123,7 @@ const Setting = () => {
             onClick={() => {
               toggletextColor('#ca0606');
               toggleBGColor('#ff00002a');
-              toggleLogoColor('/image/logo.webp');
+              toggleLogoColor('/react-project/image/logo.webp');
               toggleDirection('ltr');
               handResetBtClick();
             }}
