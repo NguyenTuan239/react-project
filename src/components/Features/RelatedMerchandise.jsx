@@ -55,8 +55,8 @@ const RelatedMerchandise = () => {
           poster="https://i.ytimg.com/vi_webp/rKVEoyTedv4/maxresdefault.webp"
           data-setup="{}"
         >
-          <source src="/image/video/sample-video.mp4" type="video/mp4" />
-          <source src="/image/video/sample-video.webm" type="video/webm" />
+          <source src="/react-project/image/video/sample-video.mp4" type="video/mp4" />
+          <source src="/react-project/image/video/sample-video.webm" type="video/webm" />
           <p className="vjs-no-js">
             To view this video please enable JavaScript, and consider upgrading to a
             web browser that
@@ -103,7 +103,7 @@ const RelatedMerchandise = () => {
             </li>
             <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><Link to="#"><FontAwesomeIcon icon={faHeart} /></Link></li>
             <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><Link to="#"><FontAwesomeIcon icon={faPlus} /></Link></li>
-            <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><span><a href="/image/video/sample-video.mp4" download><FontAwesomeIcon icon={faDownload} /></a></span></li>
+            <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><span><a href="/react-project/image/video/sample-video.mp4" download><FontAwesomeIcon icon={faDownload} /></a></span></li>
           </ul>
             <Select
               options={options}
@@ -128,7 +128,7 @@ const RelatedMerchandise = () => {
       <div className="mt-8 w-full h-auto md:w-4/12 md:max-w-96 lg:mr-16 xl:mr-28 2xl:mr-40">
         <Link data-fslightbox="html5-video" to="https://www.youtube.com/watch?v=QCGq1epI9pQ"
           className="relative">
-          <div className="trailer-img"><img src="/image/genre/01.webp"
+          <div className="trailer-img"><img src="/react-project/image/genre/01.webp"
             className="" alt="" loading="lazy" /></div>
           <span className="trailer-link">
             <FontAwesomeIcon icon={faPlay} className='text-white'/>
@@ -292,7 +292,7 @@ const RelatedMerchandise = () => {
             >
               <SwiperSlide>
                 <div className="detail-movie-des-card">
-                  <img src="../image/genre/07.webp" alt="" className="detail-movie-des-img"/>
+                  <img src="/react-project/image/genre/07.webp" alt="" className="detail-movie-des-img"/>
                   <div className="detail-movie-des-text">
                     <p className="text-wrap">James Chinlund</p>
                     <p className="text-sm mt-1">As James</p>
@@ -301,7 +301,7 @@ const RelatedMerchandise = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="detail-movie-des-card">
-                  <img src="../image/genre/06.webp" alt="" className="detail-movie-des-img"/>
+                  <img src="/react-project/image/genre/06.webp" alt="" className="detail-movie-des-img"/>
                   <div className="detail-movie-des-text">
                     <p className="text-wrap">John Nathan</p>
                     <p className="text-sm mt-1">As John</p>
@@ -321,7 +321,7 @@ const RelatedMerchandise = () => {
             >
               <SwiperSlide>
                 <div className="detail-movie-des-card">
-                  <img src="../image/genre/05.webp" alt="" className="detail-movie-des-img"/>
+                  <img src="/react-project/image/genre/05.webp" alt="" className="detail-movie-des-img"/>
                   <div className="detail-movie-des-text">
                     <p className="text-wrap">James Chinlund</p>
                     <p className="text-sm mt-1">As James</p>
@@ -330,7 +330,7 @@ const RelatedMerchandise = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="detail-movie-des-card">
-                  <img src="../image/genre/04.webp" alt="" className="detail-movie-des-img"/>
+                  <img src="/react-project/image/genre/04.webp" alt="" className="detail-movie-des-img"/>
                   <div className="detail-movie-des-text">
                     <p className="text-wrap">John Nathan</p>
                     <p className="text-sm mt-1">As John</p>
@@ -345,25 +345,25 @@ const RelatedMerchandise = () => {
       <OnlyOnStreamit
         title='Newest Products'
         imgLink={[
-          '/image/shop/product/01.webp',
-          '/image/shop/product/02.webp',
-          '/image/shop/product/03.webp',
-          '/image/shop/product/04.webp',
-          '/image/shop/product/05.webp',
-          '/image/shop/product/06.webp',
-          '/image/shop/product/07.webp',
+          '/react-project/image/shop/product/01.webp',
+          '/react-project/image/shop/product/02.webp',
+          '/react-project/image/shop/product/03.webp',
+          '/react-project/image/shop/product/04.webp',
+          '/react-project/image/shop/product/05.webp',
+          '/react-project/image/shop/product/06.webp',
+          '/react-project/image/shop/product/07.webp',
         ]}
       />
       <OnlyOnStreamit
         title='Recommended For You'
         imgLink={[
-          '/image/movie/related/01.webp',
-          '/image/movie/related/02.webp',
-          '/image/movie/related/03.webp',
-          '/image/movie/related/04.webp',
-          '/image/movie/related/05.webp',
-          '/image/movie/related/06.webp',
-          '/image/movie/related/07.webp',
+          '/react-project/image/movie/related/01.webp',
+          '/react-project/image/movie/related/02.webp',
+          '/react-project/image/movie/related/03.webp',
+          '/react-project/image/movie/related/04.webp',
+          '/react-project/image/movie/related/05.webp',
+          '/react-project/image/movie/related/06.webp',
+          '/react-project/image/movie/related/07.webp',
         ]}
       />
     </main>

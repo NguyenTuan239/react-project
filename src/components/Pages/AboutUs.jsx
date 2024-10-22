@@ -40,7 +40,7 @@ const AboutUs = () => {
   return (
     <main className="w-full h-auto bg-stone-950 text-slate-200 font-light">
       <div className="relative w-full h-72 md:h-96">
-        <img src="../image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
+        <img src="/react-project/image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
         <div className="term-of-use-hl">
           <h2 className="text-3xl font-medium mb-4 flex justify-center">About Us</h2>
           <p className="text-xl"><Link to="/otthome" className="netflix font-medium">Home</Link>&nbsp;/&nbsp;<span className="netflix">About Us</span></p>
@@ -55,28 +55,28 @@ const AboutUs = () => {
         <div className="flex flex-col md:flex-row md:gap-5 md:justify-center">
             <div>
                 <div className="overflow-hidden w-full h-auto my-5">
-                    <img src="../image/pages/team1.webp" alt="" className="w-full transition-transform ease-in-out duration-1000 hover:scale-110"/>
+                    <img src="/react-project/image/pages/team1.webp" alt="" className="w-full transition-transform ease-in-out duration-1000 hover:scale-110"/>
                 </div>
                 <p className=" p-3 pl-5 relative bg-transparent italic"><span className="web-nav-li web-nav-li-red-nothover absolute top-1 left-0 w-48 h-9"></span>CEO</p>
                 <p className="text-xl font-medium">Tonny Smith</p>
             </div>
             <div>
                 <div className="overflow-hidden w-full h-auto my-5">
-                    <img src="../image/pages/team2.webp" alt="" className="w-full transition-transform ease-in-out duration-1000 hover:scale-110"/>
+                    <img src="/react-project/image/pages/team2.webp" alt="" className="w-full transition-transform ease-in-out duration-1000 hover:scale-110"/>
                 </div>
                 <p className=" p-3 pl-5 relative bg-transparent italic"><span className="web-nav-li web-nav-li-red-nothover absolute top-1 left-0 w-48 h-9"></span>Designer</p>
                 <p className="text-xl font-medium">Barry Aline</p>
             </div>
             <div>
                 <div className="overflow-hidden w-full h-auto my-5">
-                    <img src="../image/pages/team3.webp" alt="" className="w-full transition-transform ease-in-out duration-1000 hover:scale-110"/>
+                    <img src="/react-project/image/pages/team3.webp" alt="" className="w-full transition-transform ease-in-out duration-1000 hover:scale-110"/>
                 </div>
                 <p className=" p-3 pl-5 relative bg-transparent italic"><span className="web-nav-li web-nav-li-red-nothover absolute top-1 left-0 w-48 h-9"></span>Developer</p>
                 <p className="text-xl font-medium">Tony Stark</p>
             </div>
             <div>
                 <div className="overflow-hidden w-full h-auto my-5">
-                    <img src="../image/pages/team4.webp" alt="" className="w-full transition-transform ease-in-out duration-1000 hover:scale-110"/>
+                    <img src="/react-project/image/pages/team4.webp" alt="" className="w-full transition-transform ease-in-out duration-1000 hover:scale-110"/>
                 </div>
                 <p className=" p-3 pl-5 relative bg-transparent italic"><span className="web-nav-li web-nav-li-red-nothover absolute top-1 left-0 w-48 h-9"></span>Designer</p>
                 <p className="text-xl font-medium">Spider Man</p>
@@ -86,7 +86,7 @@ const AboutUs = () => {
 
        <section className="w-full h-auto flex flex-col justify-center items-center md:flex-row">
         <div className="w-11/12 mx-auto lg:w-1/2 xl:w-1/3 flex justify-end">
-            <img src="../image/pages/map.webp" alt="" className="about-us-map"/>
+            <img src="/react-project/image/pages/map.webp" alt="" className="about-us-map"/>
         </div>
         <div className="w-11/12 mx-auto lg:w-1/2 xl:w-1/3">
             <p className="text-4xl font-medium my-4">Contact Us Here</p>

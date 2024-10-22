@@ -104,7 +104,7 @@ const MovieDetail = () => {
             </li>
             <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><Link to="#"><FontAwesomeIcon icon={faHeart} /></Link></li>
             <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><Link to="#"><FontAwesomeIcon icon={faPlus} /></Link></li>
-            <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><span><a href="/image/video/sample-video.mp4" download><FontAwesomeIcon icon={faDownload} /></a></span></li>
+            <li className=" rounded-full bg-white border-4 border-gray-500 w-10 h-10 flex justify-center items-center netflix"><span><a href="/react-project/image/video/sample-video.mp4" download><FontAwesomeIcon icon={faDownload} /></a></span></li>
           </ul>
             <Select
               options={options}
@@ -293,7 +293,7 @@ const MovieDetail = () => {
             >
               <SwiperSlide>
                 <div className="detail-movie-des-card">
-                  <img src="../image/genre/07.webp" alt="" className="detail-movie-des-img"/>
+                  <img src="/react-project/image/genre/07.webp" alt="" className="detail-movie-des-img"/>
                   <div className="detail-movie-des-text">
                     <p className="text-wrap">James Chinlund</p>
                     <p className="text-sm mt-1">As James</p>
@@ -302,7 +302,7 @@ const MovieDetail = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="detail-movie-des-card">
-                  <img src="../image/genre/06.webp" alt="" className="detail-movie-des-img"/>
+                  <img src="/react-project/image/genre/06.webp" alt="" className="detail-movie-des-img"/>
                   <div className="detail-movie-des-text">
                     <p className="text-wrap">John Nathan</p>
                     <p className="text-sm mt-1">As John</p>
@@ -322,7 +322,7 @@ const MovieDetail = () => {
             >
               <SwiperSlide>
                 <div className="detail-movie-des-card">
-                  <img src="../image/genre/05.webp" alt="" className="detail-movie-des-img"/>
+                  <img src="/react-project/image/genre/05.webp" alt="" className="detail-movie-des-img"/>
                   <div className="detail-movie-des-text">
                     <p className="text-wrap">James Chinlund</p>
                     <p className="text-sm mt-1">As James</p>
@@ -331,7 +331,7 @@ const MovieDetail = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="detail-movie-des-card">
-                  <img src="../image/genre/04.webp" alt="" className="detail-movie-des-img"/>
+                  <img src="/react-project/image/genre/04.webp" alt="" className="detail-movie-des-img"/>
                   <div className="detail-movie-des-text">
                     <p className="text-wrap">John Nathan</p>
                     <p className="text-sm mt-1">As John</p>
@@ -346,25 +346,25 @@ const MovieDetail = () => {
       <OnlyOnStreamit
         title='Recommended For You'
         imgLink={[
-          '/image/movie/popular/01.webp',
-          '/image/movie/popular/02.webp',
-          '/image/movie/popular/03.webp',
-          '/image/movie/popular/04.webp',
-          '/image/movie/popular/05.webp',
-          '/image/movie/popular/06.webp',
-          '/image/movie/popular/07.webp',
+          '/react-project/image/movie/popular/01.webp',
+          '/react-project/image/movie/popular/02.webp',
+          '/react-project/image/movie/popular/03.webp',
+          '/react-project/image/movie/popular/04.webp',
+          '/react-project/image/movie/popular/05.webp',
+          '/react-project/image/movie/popular/06.webp',
+          '/react-project/image/movie/popular/07.webp',
         ]}
       />
       <OnlyOnStreamit
         title='Related Movie'
         imgLink={[
-          '/image/movie/related/07.webp',
-          '/image/movie/related/06.webp',
-          '/image/movie/related/05.webp',
-          '/image/movie/related/04.webp',
-          '/image/movie/related/03.webp',
-          '/image/movie/related/02.webp',
-          '/image/movie/related/01.webp',
+          '/react-project/image/movie/related/07.webp',
+          '/react-project/image/movie/related/06.webp',
+          '/react-project/image/movie/related/05.webp',
+          '/react-project/image/movie/related/04.webp',
+          '/react-project/image/movie/related/03.webp',
+          '/react-project/image/movie/related/02.webp',
+          '/react-project/image/movie/related/01.webp',
         ]}
       />
     </main>

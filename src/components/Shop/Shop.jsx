@@ -8,7 +8,7 @@ export const Shop = () => {
     <main className="w-full h-auto bg-stone-950 text-slate-200 font-light">
 
       <div className="relative w-full h-72 md:h-96">
-        <img src="/image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
+        <img src="/react-project/image/pages/01.webp" alt="" className="w-full h-72 md:h-96 object-cover"/>
         <div className="term-of-use-hl">
           <h2 className="text-3xl font-medium mb-4 flex justify-center">Shop</h2>
           <p className="text-xl"><Link to="/otthome" className="netflix font-medium">Home</Link>&nbsp;/&nbsp;<span className="netflix">Shop</span></p>
@@ -51,21 +51,21 @@ export const Shop = () => {
             <div className="py-5">
               <p className="text-2xl font-medium my-5">PRODUCT</p>
               <div className="flex gap-5 items-center">
-                <img src="../../image/shop/product/01.webp" alt="" className="w-20 h-auto"/>
+                <img src="/react-project/image/shop/product/01.webp" alt="" className="w-20 h-auto"/>
                 <div>
                   <p>Magic Hat</p>
                   <p>$10.00</p>
                 </div>
               </div>
               <div className="flex gap-5 items-center my-5">
-                <img src="../../image/shop/product/02.webp" alt="" className="w-20 h-auto"/>
+                <img src="/react-project/image/shop/product/02.webp" alt="" className="w-20 h-auto"/>
                 <div>
                   <p>Green Specs</p>
                   <p>$19.00</p>
                 </div>
               </div>
               <div className="flex gap-5 items-center">
-                <img src="../../image/shop/product/03.webp" alt="" className="w-20 h-auto"/>
+                <img src="/react-project/image/shop/product/03.webp" alt="" className="w-20 h-auto"/>
                 <div>
                   <p>Cartoon Character</p>
                   <p>$14.00</p>
@@ -96,7 +96,7 @@ export const Shop = () => {
           <div id="shop-grid" className="shop-grid my-10">
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/01.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/01.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faTrashCan}/></div>
                   </div>
@@ -110,7 +110,7 @@ export const Shop = () => {
             </div>
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/02.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/02.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faEye}/></div>
                   </div>
@@ -123,7 +123,7 @@ export const Shop = () => {
             </div>
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/03.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/03.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faEye}/></div>
                   </div>
@@ -137,7 +137,7 @@ export const Shop = () => {
             </div>
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/04.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/04.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faEye}/></div>
                   </div>
@@ -151,7 +151,7 @@ export const Shop = () => {
             </div>
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/05.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/05.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faEye}/></div>
                   </div>
@@ -165,7 +165,7 @@ export const Shop = () => {
             </div>
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/06.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/06.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faEye}/></div>
                   </div>
@@ -178,7 +178,7 @@ export const Shop = () => {
             </div>
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/07.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/07.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faEye}/></div>
                   </div>
@@ -191,7 +191,7 @@ export const Shop = () => {
             </div>
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/08.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/08.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faEye}/></div>
                   </div>
@@ -204,7 +204,7 @@ export const Shop = () => {
             </div>
             <div className="shop-product-item relative">
               <div className="relative">
-                  <a href="#"><img src="../../image/shop/product/09.webp" alt="" className="relative w-full h-auto"/></a>
+                  <a href="#"><img src="/react-project/image/shop/product/09.webp" alt="" className="relative w-full h-auto"/></a>
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <div className="shop-hover-item netflix-bg"><FontAwesomeIcon icon={faEye}/><FontAwesomeIcon icon={faHeart} className='px-5'/><FontAwesomeIcon icon={faEye}/></div>
                   </div>

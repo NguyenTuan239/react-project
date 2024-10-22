@@ -72,7 +72,7 @@
     position: relative;
     height: auto;
     width: 100%;
-    background-image: url(../image/parallax/parallex.webp);
+    background-image: url(/react-project/image/parallax/parallex.webp);
     background-attachment: fixed;
     z-index: 0;
     display: flex;

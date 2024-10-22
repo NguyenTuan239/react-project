@@ -43,7 +43,7 @@ const ComingSoon = () => {
 
   return (
     <section className="w-full text-slate-300">
-        <div className="w-full min-h-screen p-20 bg-[url('/image/pages/coming-soon.webp')]">
+        <div className="w-full min-h-screen p-20 bg-[url('/react-project/image/pages/coming-soon.webp')]">
             <p className="text-5xl font-medium md:text-7xl text-white">We are coming back soon</p>
             <div className="mt-10 flex flex-col justify-center items-center md:flex-row md:gap-7 md:justify-start md:items-start">
                 <div className="flex flex-col items-center">

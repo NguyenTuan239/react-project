@@ -7,10 +7,10 @@ import './Login.css'
 
 const login = () => {
   return (
-    <main className="login-bg fixed min-h-screen w-full bg-[url('/image/pages/01.webp')] bg-cover text-slate-200">
+    <main className="login-bg fixed min-h-screen w-full bg-[url('/react-project/image/pages/01.webp')] bg-cover text-slate-200">
       <section className="absolute w-full h-full flex justify-center items-center z-10">
         <div className="login-bar">
-            <Link to="/otthome" className="my-12 mx-auto"><img src="/image/logo.webp" className="logo h-9 w-auto"/></Link>
+            <Link to="/otthome" className="my-12 mx-auto"><img src="/react-project/image/logo.webp" className="logo h-9 w-auto"/></Link>
             <div className="w-full mb-4">
                 <p className="font-medium mb-2">Username or Email Address</p>
                 <input type="text" className="login-input red-border" required/>

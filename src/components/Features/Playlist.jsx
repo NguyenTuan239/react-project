@@ -40,7 +40,7 @@ const Playlist = () => {
     <main className="w-full bg-black text-slate-200">
       <div className="playlist-profile px-5 xl:px-28">
         <div className="flex gap-5 items-center">
-            <img src="../image/profile.png" alt="" className="h-16 w-16"/>
+            <img src="/react-project/image/profile.png" alt="" className="h-16 w-16"/>
             <div>
                 <p>Admin</p>
                 <p>Admin@gmail.com</p>
@@ -73,37 +73,37 @@ const Playlist = () => {
           <h2 className="py-5 text-2xl">My Playlist</h2>
           <div className="playlist-grid">
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/01.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/01.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 1</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>3 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/02.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/02.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 2</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>5 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/03.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/03.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 3</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>7 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/04.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/04.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 4</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>15 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/05.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/05.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 5</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>10 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/06.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/06.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 6</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>7 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/07.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/07.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 7</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>6 Views</p>
             </div>
@@ -113,22 +113,22 @@ const Playlist = () => {
           <h2 className="py-5 text-2xl">My Playlist</h2>
           <div className="playlist-grid">
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/01.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/01.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 1</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>3 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/02.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/02.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 2</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>5 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/03.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/03.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 3</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>7 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/04.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/04.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 4</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>10 Views</p>
             </div>
@@ -138,37 +138,37 @@ const Playlist = () => {
           <h2 className="py-5 text-2xl">My Playlist</h2>
           <div className="playlist-grid">
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/01.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/01.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 1</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>3 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/02.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/02.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 2</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>5 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/03.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/03.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 3</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>7 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/04.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/04.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 4</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>15 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/05.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/05.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 5</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>10 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/06.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/06.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 6</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>7 Views</p>
             </div>
             <div className="playlist-card">
-              <div className="overflow-hidden"><img src="../image/movie/playlist/07.webp" alt=""/></div>
+              <div className="overflow-hidden"><img src="/react-project/image/movie/playlist/07.webp" alt=""/></div>
               <p className="pt-5 pb-3 text-xl font-medium">Play List 7</p>
               <p className="text-xs font-medium text-slate-300"><FontAwesomeIcon icon={faEarthAsia} className='netflix pr-2'/>Public<FontAwesomeIcon icon={faEye} className='netflix pr-2 pl-2'/>6 Views</p>
             </div>

@@ -5,7 +5,7 @@ import { faCaretRight, faHeart, faDownload, faGaugeHigh, faLocationDot,faTrashCa
 
 const ResetPassword = () => {
   return (
-    <main className="login-bg fixed min-h-screen w-full bg-[url('/image/pages/01.webp')] bg-cover text-slate-200">
+    <main className="login-bg fixed min-h-screen w-full bg-[url('/react-project/image/pages/01.webp')] bg-cover text-slate-200">
       <section className="absolute w-full h-full flex justify-center items-center z-10">
         <div className="login-bar reset-password-bar">
             <p className="font-light mt-12 mb-5">Please enter your username or email address. You will receive a link to create a new password via email.</p>

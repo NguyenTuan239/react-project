@@ -15,12 +15,12 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path='/' element={<App />}>
-        <Route path='otthome' element={<OTThome />}/>
-        <Route path='home' element={<Home />}/>
-        <Route path='movie' element={<Movie />}/>
-        <Route path='video' element={<Video />}/>
-        <Route path='tvshow' element={<TVShow />}/>
-        <Route path='merchandisestore' element={<MerchandiseStore />}/>
+        <Route path='otthome' element={<OTThome />} />
+        <Route path='home' element={<Home />} />
+        <Route path='movie' element={<Movie />} />
+        <Route path='video' element={<Video />} />
+        <Route path='tvshow' element={<TVShow />} />
+        <Route path='merchandisestore' element={<MerchandiseStore />} />
 
         <Route path='restrictedcontent' element={<RestrictedContent />} />
         <Route path='relatedmerchandise' element={<RelatedMerchandise />} />
@@ -59,8 +59,9 @@ const router = createBrowserRouter(
       <Route path='errorpage2' element={<ErrorPage2 />} />
       <Route path='comingsoon' element={<ComingSoon />} />
     </>
-  )
-)
+  ),
+  { basename: '/react-project' }
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

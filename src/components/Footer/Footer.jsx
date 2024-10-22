@@ -42,7 +42,7 @@ const Footer = () => {
       <div className="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">
         <div>
           <div className='relative h-10 w-40 mb-8'>
-            <Link to="otthome"><img src="/image/logo.webp" alt="logo" className="logo h-8 w-auto" /></Link>
+            <Link to="otthome"><img src="/react-project/image/logo.webp" alt="logo" className="logo h-8 w-auto" /></Link>
           </div>
           <p>Email us: <Link to="mailto:customer@streamit.com" className="font-normal">customer@streamit.com</Link></p>
           <p className="mt-4">CUSTOMER SERVICES</p>
@@ -110,10 +110,10 @@ const Footer = () => {
           <p className="sm:mr-20 pb-3 text-slate-100">Download Streamit Apps</p>
           <div className="flex gap-3">
             <Link to="#" className="flex items-center">
-              <img src="/image/footer/google-play.webp" alt="Get it on Google Play" className="h-10" />
+              <img src="/react-project/image/footer/google-play.webp" alt="Get it on Google Play" className="h-10" />
             </Link>
             <Link to="#" className="flex items-center">
-              <img src="/image/footer/apple.webp" alt="Download on the App Store" className="h-10" />
+              <img src="/react-project/image/footer/apple.webp" alt="Download on the App Store" className="h-10" />
             </Link>
           </div>
         </div>
