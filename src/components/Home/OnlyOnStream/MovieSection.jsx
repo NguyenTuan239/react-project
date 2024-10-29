@@ -156,8 +156,7 @@ function MovieSection({
           className={`${isWatchtrailer ? '' : 'hidden'} home-trailer-container`}>
           <video
             ref={trailerRef}
-            id="my-video"
-            className="video-js detail-video"
+            className="my-video"
             controls
             preload="auto"
             width="640"

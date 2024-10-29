@@ -1,4 +1,5 @@
 import { StrictMode } from 'react'
+import { Navigate } from 'react-router-dom';
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
@@ -15,6 +16,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path='/' element={<App />}>
+        
+        <Route index element={<Navigate to="otthome" replace />} />
+
         <Route path='otthome' element={<OTThome />} />
         <Route path='home' element={<Home />} />
         <Route path='movie' element={<Movie />} />
@@ -46,9 +50,6 @@ const router = createBrowserRouter(
         <Route path='login' element={<Login />} />
         <Route path='register' element={<Register />} />
         <Route path='resetpassword' element={<ResetPassword />} />
-
-        {/* Redirect from '/' to '/otthome' */}
-        <Route path='/' element={<OTThome />} />
 
         <Route path='*' element={<div>Not Found</div>} />
       </Route>
